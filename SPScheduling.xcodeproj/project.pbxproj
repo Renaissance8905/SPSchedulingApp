@@ -13,6 +13,11 @@
 		CD1001A6226021CF009FD15D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A5226021CF009FD15D /* Assets.xcassets */; };
 		CD1001A9226021CF009FD15D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */; };
 		CD1001B4226021CF009FD15D /* SPSchedulingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001B3226021CF009FD15D /* SPSchedulingTests.swift */; };
+		CD1001C22260234B009FD15D /* stubGetServices.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1001C12260234B009FD15D /* stubGetServices.json */; };
+		CD1001C422602386009FD15D /* stubGetLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1001C322602386009FD15D /* stubGetLocations.json */; };
+		CD1001C8226024E9009FD15D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001C7226024E9009FD15D /* Service.swift */; };
+		CD1001CA22602594009FD15D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001C922602594009FD15D /* Location.swift */; };
+		CD1001CC226027A4009FD15D /* APIResponseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001CB226027A4009FD15D /* APIResponseProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		CD1001AF226021CF009FD15D /* SPSchedulingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPSchedulingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1001B3226021CF009FD15D /* SPSchedulingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSchedulingTests.swift; sourceTree = "<group>"; };
 		CD1001B5226021CF009FD15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD1001C12260234B009FD15D /* stubGetServices.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stubGetServices.json; sourceTree = "<group>"; };
+		CD1001C322602386009FD15D /* stubGetLocations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stubGetLocations.json; sourceTree = "<group>"; };
+		CD1001C7226024E9009FD15D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		CD1001C922602594009FD15D /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CD1001CB226027A4009FD15D /* APIResponseProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				CD10019D226021CD009FD15D /* SPScheduling */,
+				CD1001AA226021CF009FD15D /* Info.plist */,
 				CD1001B2226021CF009FD15D /* SPSchedulingTests */,
 				CD10019C226021CD009FD15D /* Products */,
 			);
@@ -77,12 +88,8 @@
 		CD10019D226021CD009FD15D /* SPScheduling */ = {
 			isa = PBXGroup;
 			children = (
-				CD10019E226021CE009FD15D /* AppDelegate.swift */,
-				CD1001A0226021CE009FD15D /* ViewController.swift */,
-				CD1001A2226021CE009FD15D /* Main.storyboard */,
-				CD1001A5226021CF009FD15D /* Assets.xcassets */,
-				CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */,
-				CD1001AA226021CF009FD15D /* Info.plist */,
+				CD1001C5226024AD009FD15D /* Source */,
+				CD1001BE22602317009FD15D /* Resources */,
 			);
 			path = SPScheduling;
 			sourceTree = "<group>";
@@ -94,6 +101,54 @@
 				CD1001B5226021CF009FD15D /* Info.plist */,
 			);
 			path = SPSchedulingTests;
+			sourceTree = "<group>";
+		};
+		CD1001BE22602317009FD15D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD1001A5226021CF009FD15D /* Assets.xcassets */,
+				CD1001C02260232D009FD15D /* Stubs */,
+				CD1001BF22602323009FD15D /* Views */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD1001BF22602323009FD15D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD1001A2226021CE009FD15D /* Main.storyboard */,
+				CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD1001C02260232D009FD15D /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				CD1001C12260234B009FD15D /* stubGetServices.json */,
+				CD1001C322602386009FD15D /* stubGetLocations.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		CD1001C5226024AD009FD15D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CD1001C6226024CD009FD15D /* Models */,
+				CD10019E226021CE009FD15D /* AppDelegate.swift */,
+				CD1001A0226021CE009FD15D /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CD1001C6226024CD009FD15D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD1001C7226024E9009FD15D /* Service.swift */,
+				CD1001C922602594009FD15D /* Location.swift */,
+				CD1001CB226027A4009FD15D /* APIResponseProtocols.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +232,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1001C422602386009FD15D /* stubGetLocations.json in Resources */,
 				CD1001A9226021CF009FD15D /* LaunchScreen.storyboard in Resources */,
 				CD1001A6226021CF009FD15D /* Assets.xcassets in Resources */,
+				CD1001C22260234B009FD15D /* stubGetServices.json in Resources */,
 				CD1001A4226021CE009FD15D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,8 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1001CC226027A4009FD15D /* APIResponseProtocols.swift in Sources */,
 				CD1001A1226021CE009FD15D /* ViewController.swift in Sources */,
 				CD10019F226021CE009FD15D /* AppDelegate.swift in Sources */,
+				CD1001CA22602594009FD15D /* Location.swift in Sources */,
+				CD1001C8226024E9009FD15D /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

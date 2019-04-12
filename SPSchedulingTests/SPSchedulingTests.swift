@@ -11,23 +11,41 @@ import XCTest
 
 class SPSchedulingTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testServiceResponse() {
+        do {
+            let bundle = Bundle.main
+            XCTAssertNotNil(bundle)
+            let path = bundle.path(forResource: "stubGetServices", ofType: "json")
+            XCTAssertNotNil(path)
+            
+            let data = try Data(contentsOf: URL(fileURLWithPath: path!, isDirectory: false))
+            
+            let decoder = JSONDecoder()
+            let response = try decoder.decode(ServiceResponse.self, from: data)
+            
+            XCTAssertEqual(response.data.count, 7)
+            print(response.data.first)
+        } catch let error {
+            XCTFail(error.localizedDescription)
+        }
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testLocationResponse() {
+        do {
+            let bundle = Bundle.main
+            XCTAssertNotNil(bundle)
+            let path = bundle.path(forResource: "stubGetLocations", ofType: "json")
+            XCTAssertNotNil(path)
+            
+            let data = try Data(contentsOf: URL(fileURLWithPath: path!, isDirectory: false))
+            
+            let decoder = JSONDecoder()
+            let response = try decoder.decode(LocationResponse.self, from: data)
+            
+            XCTAssertEqual(response.data.count, 3)
+            print(response.data.first)
+        } catch let error {
+            XCTFail(error.localizedDescription)
         }
     }
 
