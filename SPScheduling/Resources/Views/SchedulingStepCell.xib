@@ -29,12 +29,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjB-4t-xyC">
-                        <rect key="frame" x="60" y="47" width="410" height="51"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxd-3L-Iea">
                         <rect key="frame" x="60" y="19" width="42" height="20"/>
                         <constraints>
@@ -44,23 +38,25 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" distribution="fillProportionally" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="zwY-wg-sh1">
+                        <rect key="frame" x="60" y="47" width="410" height="51"/>
+                    </stackView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="zwY-wg-sh1" secondAttribute="bottom" id="KYX-n3-0hm"/>
                     <constraint firstItem="NEx-6F-iUY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="XgO-SK-FIv"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="MjB-4t-xyC" secondAttribute="bottom" id="fSn-M0-LOu"/>
-                    <constraint firstItem="MjB-4t-xyC" firstAttribute="leading" secondItem="Mxd-3L-Iea" secondAttribute="leading" id="gGZ-B8-16V"/>
-                    <constraint firstItem="MjB-4t-xyC" firstAttribute="top" secondItem="Mxd-3L-Iea" secondAttribute="bottom" constant="8" id="hYI-IG-zUv"/>
                     <constraint firstItem="Mxd-3L-Iea" firstAttribute="leading" secondItem="NEx-6F-iUY" secondAttribute="trailing" constant="4" id="hd3-Tk-OF8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zwY-wg-sh1" secondAttribute="trailing" constant="8" id="jRW-bS-A4h"/>
                     <constraint firstItem="NEx-6F-iUY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="ohZ-AW-tkc"/>
+                    <constraint firstItem="zwY-wg-sh1" firstAttribute="leading" secondItem="Mxd-3L-Iea" secondAttribute="leading" id="qt9-qz-wGU"/>
+                    <constraint firstItem="zwY-wg-sh1" firstAttribute="top" secondItem="Mxd-3L-Iea" secondAttribute="bottom" constant="8" id="rGs-cF-idF"/>
                     <constraint firstItem="Mxd-3L-Iea" firstAttribute="centerY" secondItem="NEx-6F-iUY" secondAttribute="centerY" id="s9W-hn-bht"/>
                     <constraint firstItem="Mxd-3L-Iea" firstAttribute="leading" secondItem="NEx-6F-iUY" secondAttribute="trailing" constant="4" id="vgT-Tr-l0j"/>
-                    <constraint firstItem="MjB-4t-xyC" firstAttribute="leading" secondItem="Mxd-3L-Iea" secondAttribute="leading" id="zHh-pM-Qhe"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="MjB-4t-xyC" secondAttribute="trailing" constant="8" id="zX9-rx-GuD"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="detailLblStack" destination="MjB-4t-xyC" id="YMX-wY-Iwa"/>
+                <outlet property="detailLblStack" destination="zwY-wg-sh1" id="pXD-oM-ciI"/>
                 <outlet property="numberLbl" destination="NEx-6F-iUY" id="ysc-Hh-CZW"/>
                 <outlet property="titleLbl" destination="Mxd-3L-Iea" id="Pe4-hl-6Gw"/>
             </connections>

@@ -12,7 +12,7 @@ class SchedulingStepCell: TableCell {
     
     @IBOutlet var numberLbl: UILabel?
     @IBOutlet var titleLbl: UILabel?
-    @IBOutlet var detailLblStack: UILabel?
+    @IBOutlet var detailLblStack: UIStackView?
     
     static func cell(for tableView: UITableView, with viewModel: SchedulingStepViewModel) -> SchedulingStepCell {
         let cell = self.cell(for: tableView) ?? SchedulingStepCell()
@@ -45,8 +45,18 @@ class SchedulingStepCell: TableCell {
     
     private func configureDetailText(with step: SchedulingStepViewModel) {
         guard let stack = detailLblStack else { return }
-        stack.text = step.detailText.joined(separator: "\n")
-        stack.textColor = .secondaryBlue
+        
+        for subView in stack.arrangedSubviews {
+            stack.removeArrangedSubview(subView)
+        }
+
+        for detail in step.detailText {
+            let detailLbl = UILabel()
+            detailLbl.text = detail
+            detailLbl.textColor = .secondaryBlue
+            stack.addArrangedSubview(detailLbl)
+        }
+
         
     }
     
