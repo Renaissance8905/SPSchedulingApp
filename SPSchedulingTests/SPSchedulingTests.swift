@@ -24,7 +24,7 @@ class SPSchedulingTests: XCTestCase {
             let response = try decoder.decode(ServiceResponse.self, from: data)
             
             XCTAssertEqual(response.data.count, 7)
-            print(response.data.first)
+            XCTAssertEqual(response.data.first?.attributes.rate, "300.0")
         } catch let error {
             XCTFail(error.localizedDescription)
         }
@@ -43,7 +43,8 @@ class SPSchedulingTests: XCTestCase {
             let response = try decoder.decode(LocationResponse.self, from: data)
             
             XCTAssertEqual(response.data.count, 3)
-            print(response.data.first)
+            XCTAssertEqual(response.data.first?.attributes.city, "Port Alyssonbury")
+            XCTAssertEqual(response.data.first?.attributes.isVideo, false)
         } catch let error {
             XCTFail(error.localizedDescription)
         }

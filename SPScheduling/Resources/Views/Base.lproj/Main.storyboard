@@ -1,21 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Launch View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaunchViewController" customModule="SPScheduling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Client portal base URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t8n-cC-LmZ">
+                                <rect key="frame" x="37.5" y="205" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clinician ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ozH-dL-zHJ">
+                                <rect key="frame" x="37.5" y="295" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scheduling Widget App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v81-wC-pu3">
+                                <rect key="frame" x="97.5" y="84" width="180.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2K-P3-D5m">
+                                <rect key="frame" x="37.5" y="385" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="e5u-Gk-S9s"/>
+                                </constraints>
+                                <state key="normal" title="Launch"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clinician ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAu-Hy-G1C">
+                                <rect key="frame" x="37.5" y="276" width="63.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client portal base URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkU-zM-8c4">
+                                <rect key="frame" x="37.5" y="186" width="127" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v81-wC-pu3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5c4-Ns-0Aw"/>
+                            <constraint firstItem="ozH-dL-zHJ" firstAttribute="width" secondItem="t8n-cC-LmZ" secondAttribute="width" id="62k-B5-qMa"/>
+                            <constraint firstItem="t8n-cC-LmZ" firstAttribute="top" secondItem="v81-wC-pu3" secondAttribute="bottom" constant="100" id="8Hr-rb-bJq"/>
+                            <constraint firstItem="Z2K-P3-D5m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AgR-yN-t7E"/>
+                            <constraint firstItem="ozH-dL-zHJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="L49-bc-gJg"/>
+                            <constraint firstItem="ozH-dL-zHJ" firstAttribute="leading" secondItem="uAu-Hy-G1C" secondAttribute="leading" id="N01-Mn-bzn"/>
+                            <constraint firstItem="ozH-dL-zHJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9G-sC-Sp7"/>
+                            <constraint firstItem="t8n-cC-LmZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ROg-bJ-LhE"/>
+                            <constraint firstItem="v81-wC-pu3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="Sql-YD-Klg"/>
+                            <constraint firstItem="ozH-dL-zHJ" firstAttribute="top" secondItem="uAu-Hy-G1C" secondAttribute="bottom" constant="4" id="Z2R-Rh-SqB"/>
+                            <constraint firstItem="ozH-dL-zHJ" firstAttribute="top" secondItem="t8n-cC-LmZ" secondAttribute="bottom" constant="60" id="gWL-vR-yto"/>
+                            <constraint firstItem="t8n-cC-LmZ" firstAttribute="leading" secondItem="bkU-zM-8c4" secondAttribute="leading" id="rBf-3H-9dt"/>
+                            <constraint firstItem="t8n-cC-LmZ" firstAttribute="top" secondItem="bkU-zM-8c4" secondAttribute="bottom" constant="4" id="twq-IV-Lvi"/>
+                            <constraint firstItem="Z2K-P3-D5m" firstAttribute="width" secondItem="ozH-dL-zHJ" secondAttribute="width" id="urq-kG-JiH"/>
+                            <constraint firstItem="Z2K-P3-D5m" firstAttribute="top" secondItem="ozH-dL-zHJ" secondAttribute="bottom" constant="60" id="xzK-C3-jYb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="clientURLField" destination="t8n-cC-LmZ" id="Vsq-1S-zFR"/>
+                        <outlet property="clinicianIDField" destination="ozH-dL-zHJ" id="Y55-NM-g10"/>
+                        <outlet property="launchBtn" destination="Z2K-P3-D5m" id="g3f-5M-vnq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

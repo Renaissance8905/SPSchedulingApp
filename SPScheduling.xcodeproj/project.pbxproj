@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD10019F226021CE009FD15D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10019E226021CE009FD15D /* AppDelegate.swift */; };
-		CD1001A1226021CE009FD15D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001A0226021CE009FD15D /* ViewController.swift */; };
 		CD1001A4226021CE009FD15D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A2226021CE009FD15D /* Main.storyboard */; };
 		CD1001A6226021CF009FD15D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A5226021CF009FD15D /* Assets.xcassets */; };
 		CD1001A9226021CF009FD15D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */; };
@@ -18,6 +17,20 @@
 		CD1001C8226024E9009FD15D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001C7226024E9009FD15D /* Service.swift */; };
 		CD1001CA22602594009FD15D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001C922602594009FD15D /* Location.swift */; };
 		CD1001CC226027A4009FD15D /* APIResponseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001CB226027A4009FD15D /* APIResponseProtocols.swift */; };
+		CDEEB49322604D7100E01CAE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49222604D7100E01CAE /* LaunchViewController.swift */; };
+		CDEEB49522604E0D00E01CAE /* SchedulingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */; };
+		CDEEB49E226057EC00E01CAE /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49C226057EC00E01CAE /* ServiceCell.swift */; };
+		CDEEB49F226057EC00E01CAE /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB49D226057EC00E01CAE /* ServiceCell.xib */; };
+		CDEEB4A22260581900E01CAE /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4A02260581900E01CAE /* LocationCell.swift */; };
+		CDEEB4A32260581900E01CAE /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB4A12260581900E01CAE /* LocationCell.xib */; };
+		CDEEB4A62260582C00E01CAE /* SchedulingStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4A42260582C00E01CAE /* SchedulingStepCell.swift */; };
+		CDEEB4AA22605AF600E01CAE /* UIColor+SchedulingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4A922605AF600E01CAE /* UIColor+SchedulingWidget.swift */; };
+		CDEEB4AC22605D6C00E01CAE /* SchedulingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB4AB22605D6C00E01CAE /* SchedulingController.storyboard */; };
+		CDEEB4AE2260610300E01CAE /* SchedulingStepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4AD2260610300E01CAE /* SchedulingStepController.swift */; };
+		CDEEB4B0226061A900E01CAE /* TableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4AF226061A900E01CAE /* TableCellProtocol.swift */; };
+		CDEEB4B622607F9900E01CAE /* SchedulingStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB4B422607F9900E01CAE /* SchedulingStepCell.xib */; };
+		CDEEB4B82260820900E01CAE /* SchedulingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4B72260820900E01CAE /* SchedulingStep.swift */; };
+		CDEEB4BA2260821300E01CAE /* SchedulingStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4B92260821300E01CAE /* SchedulingStepViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,11 +46,9 @@
 /* Begin PBXFileReference section */
 		CD10019B226021CD009FD15D /* SPScheduling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPScheduling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD10019E226021CE009FD15D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD1001A0226021CE009FD15D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD1001A3226021CE009FD15D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD1001A5226021CF009FD15D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD1001A8226021CF009FD15D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CD1001AA226021CF009FD15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD1001AF226021CF009FD15D /* SPSchedulingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPSchedulingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1001B3226021CF009FD15D /* SPSchedulingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSchedulingTests.swift; sourceTree = "<group>"; };
 		CD1001B5226021CF009FD15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +57,21 @@
 		CD1001C7226024E9009FD15D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CD1001C922602594009FD15D /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		CD1001CB226027A4009FD15D /* APIResponseProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseProtocols.swift; sourceTree = "<group>"; };
+		CDEEB49222604D7100E01CAE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingWidget.swift; sourceTree = "<group>"; };
+		CDEEB498226050AF00E01CAE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEEB49C226057EC00E01CAE /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		CDEEB49D226057EC00E01CAE /* ServiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
+		CDEEB4A02260581900E01CAE /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		CDEEB4A12260581900E01CAE /* LocationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
+		CDEEB4A42260582C00E01CAE /* SchedulingStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingStepCell.swift; sourceTree = "<group>"; };
+		CDEEB4A922605AF600E01CAE /* UIColor+SchedulingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+SchedulingWidget.swift"; sourceTree = "<group>"; };
+		CDEEB4AB22605D6C00E01CAE /* SchedulingController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SchedulingController.storyboard; sourceTree = "<group>"; };
+		CDEEB4AD2260610300E01CAE /* SchedulingStepController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingStepController.swift; sourceTree = "<group>"; };
+		CDEEB4AF226061A900E01CAE /* TableCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellProtocol.swift; sourceTree = "<group>"; };
+		CDEEB4B422607F9900E01CAE /* SchedulingStepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchedulingStepCell.xib; sourceTree = "<group>"; };
+		CDEEB4B72260820900E01CAE /* SchedulingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingStep.swift; sourceTree = "<group>"; };
+		CDEEB4B92260821300E01CAE /* SchedulingStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingStepViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				CD10019D226021CD009FD15D /* SPScheduling */,
-				CD1001AA226021CF009FD15D /* Info.plist */,
 				CD1001B2226021CF009FD15D /* SPSchedulingTests */,
 				CD10019C226021CD009FD15D /* Products */,
 			);
@@ -88,6 +113,7 @@
 		CD10019D226021CD009FD15D /* SPScheduling */ = {
 			isa = PBXGroup;
 			children = (
+				CDEEB498226050AF00E01CAE /* Info.plist */,
 				CD1001C5226024AD009FD15D /* Source */,
 				CD1001BE22602317009FD15D /* Resources */,
 			);
@@ -116,8 +142,12 @@
 		CD1001BF22602323009FD15D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CDEEB4B422607F9900E01CAE /* SchedulingStepCell.xib */,
+				CDEEB49D226057EC00E01CAE /* ServiceCell.xib */,
 				CD1001A2226021CE009FD15D /* Main.storyboard */,
+				CDEEB4AB22605D6C00E01CAE /* SchedulingController.storyboard */,
 				CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */,
+				CDEEB4A12260581900E01CAE /* LocationCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,9 +164,13 @@
 		CD1001C5226024AD009FD15D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CD1001C6226024CD009FD15D /* Models */,
 				CD10019E226021CE009FD15D /* AppDelegate.swift */,
-				CD1001A0226021CE009FD15D /* ViewController.swift */,
+				CDEEB4BB2260823F00E01CAE /* Scheduling Step */,
+				CD1001C6226024CD009FD15D /* Models */,
+				CDEEB49222604D7100E01CAE /* LaunchViewController.swift */,
+				CDEEB4A922605AF600E01CAE /* UIColor+SchedulingWidget.swift */,
+				CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */,
+				CDEEB4A82260583500E01CAE /* Cells */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -149,6 +183,27 @@
 				CD1001CB226027A4009FD15D /* APIResponseProtocols.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CDEEB4A82260583500E01CAE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CDEEB4AF226061A900E01CAE /* TableCellProtocol.swift */,
+				CDEEB49C226057EC00E01CAE /* ServiceCell.swift */,
+				CDEEB4A02260581900E01CAE /* LocationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CDEEB4BB2260823F00E01CAE /* Scheduling Step */ = {
+			isa = PBXGroup;
+			children = (
+				CDEEB4AD2260610300E01CAE /* SchedulingStepController.swift */,
+				CDEEB4A42260582C00E01CAE /* SchedulingStepCell.swift */,
+				CDEEB4B72260820900E01CAE /* SchedulingStep.swift */,
+				CDEEB4B92260821300E01CAE /* SchedulingStepViewModel.swift */,
+			);
+			path = "Scheduling Step";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,10 +288,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1001C422602386009FD15D /* stubGetLocations.json in Resources */,
+				CDEEB4A32260581900E01CAE /* LocationCell.xib in Resources */,
 				CD1001A9226021CF009FD15D /* LaunchScreen.storyboard in Resources */,
+				CDEEB4AC22605D6C00E01CAE /* SchedulingController.storyboard in Resources */,
 				CD1001A6226021CF009FD15D /* Assets.xcassets in Resources */,
 				CD1001C22260234B009FD15D /* stubGetServices.json in Resources */,
 				CD1001A4226021CE009FD15D /* Main.storyboard in Resources */,
+				CDEEB4B622607F9900E01CAE /* SchedulingStepCell.xib in Resources */,
+				CDEEB49F226057EC00E01CAE /* ServiceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,10 +313,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEEB4BA2260821300E01CAE /* SchedulingStepViewModel.swift in Sources */,
+				CDEEB4B0226061A900E01CAE /* TableCellProtocol.swift in Sources */,
 				CD1001CC226027A4009FD15D /* APIResponseProtocols.swift in Sources */,
-				CD1001A1226021CE009FD15D /* ViewController.swift in Sources */,
+				CDEEB4B82260820900E01CAE /* SchedulingStep.swift in Sources */,
+				CDEEB49322604D7100E01CAE /* LaunchViewController.swift in Sources */,
+				CDEEB49522604E0D00E01CAE /* SchedulingWidget.swift in Sources */,
+				CDEEB4AA22605AF600E01CAE /* UIColor+SchedulingWidget.swift in Sources */,
+				CDEEB4AE2260610300E01CAE /* SchedulingStepController.swift in Sources */,
+				CDEEB49E226057EC00E01CAE /* ServiceCell.swift in Sources */,
 				CD10019F226021CE009FD15D /* AppDelegate.swift in Sources */,
+				CDEEB4A62260582C00E01CAE /* SchedulingStepCell.swift in Sources */,
 				CD1001CA22602594009FD15D /* Location.swift in Sources */,
+				CDEEB4A22260581900E01CAE /* LocationCell.swift in Sources */,
 				CD1001C8226024E9009FD15D /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,8 +488,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4DTZJF4FB5;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SPScheduling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,6 +497,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cspan.SPScheduling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -438,8 +507,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4DTZJF4FB5;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SPScheduling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,6 +516,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cspan.SPScheduling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

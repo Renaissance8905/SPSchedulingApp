@@ -20,6 +20,7 @@ protocol Response: Codable {
 struct PaginationLinks: Codable {
     var first: String
     var last: String
+    
 }
 
 protocol APIData: Codable {
