@@ -30,7 +30,9 @@ public class SchedulingWidget {
             case .info, .dateTime:
                 return
             }
+            
         }
+        
     }
     
     var clinician: Clinician?
@@ -45,10 +47,12 @@ public class SchedulingWidget {
         default:         return nil // out of scope for this widget
             
         }
+        
     }
     
     private func step(for indexPath: IndexPath) -> SchedulingStep? {
         return SchedulingStep(rawValue: indexPath.row + 1)
+        
     }
     
     func rollBackActiveStep(to indexPath: IndexPath) {
@@ -80,9 +84,12 @@ public class SchedulingWidget {
         let vc = DetailController()
         vc.widget = self
         return vc
+        
     }
     
     var viewControllerForActiveStep: UIViewController {
         return viewController(for: activeStep)
+        
     }
+    
 }
