@@ -11,6 +11,8 @@ import UIKit
 
 class LaunchViewController: UIViewController {
     
+    let widget = SchedulingWidget()
+    
     @IBOutlet var clientURLField: UITextField?
     @IBOutlet var clinicianIDField: UITextField?
     @IBOutlet var launchBtn: UIButton?
@@ -39,10 +41,11 @@ class LaunchViewController: UIViewController {
     @objc func launchScheduling() {
         guard let url = inputURL, let id = inputID else { return }
         
-        print("launching with url: \(url)\n          with id: \(id)")
+        print("launching with url: \(url)\n          with id: \(id)") // DEBUG
         
         let clinician = Clinician(id: id, url: url, name: "Rob Gross, MFT")
-        SchedulingWidget().launch(self, with: clinician)
+        
+        widget.launch(self, with: clinician)
         
     }
     

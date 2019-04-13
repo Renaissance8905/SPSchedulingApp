@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 protocol Response: Codable {
     associatedtype DataType: APIData
     
@@ -33,3 +32,7 @@ protocol APIData: Codable {
 }
 
 protocol Attributes: Codable {}
+
+protocol SchedulingData {
+    var textRepresentation: [String] { get }
+}

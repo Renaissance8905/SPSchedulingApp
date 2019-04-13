@@ -26,6 +26,7 @@ class SchedulingStepCell: TableCell {
         configureDetailText(with: step)
         
         selectionStyle = .none
+        
     }
     
     private func configureNumberLbl(with step: SchedulingStepViewModel) {
@@ -58,7 +59,6 @@ class SchedulingStepCell: TableCell {
             detailLbl.textColor = .secondaryBlue
             stack.addArrangedSubview(detailLbl)
         }
-
         
     }
     
