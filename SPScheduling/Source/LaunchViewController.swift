@@ -26,6 +26,7 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         launchBtn?.addTarget(self, action: #selector(launchScheduling), for: .touchUpInside)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,13 +36,13 @@ class LaunchViewController: UIViewController {
         launchScheduling()
     }
     
-    
     @objc func launchScheduling() {
         guard let url = inputURL, let id = inputID else { return }
         
         print("launching with url: \(url)\n          with id: \(id)")
         
-        SchedulingWidget().launch(self, withURL: url, id: id)
+        let clinician = Clinician(id: id, url: url, name: "Rob Gross, MFT")
+        SchedulingWidget().launch(self, with: clinician)
         
     }
     

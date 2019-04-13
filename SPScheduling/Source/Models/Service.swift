@@ -16,7 +16,7 @@ struct ServiceResponse: Response {
     
 }
 
-struct Service: APIData {
+struct Service: APIData, SchedulingData {
     
     typealias AttributeType = ServiceAttributes
     
@@ -35,6 +35,10 @@ struct Service: APIData {
             return callToBook.lowercased() == "true"
         }
         
+    }
+    
+    var textRepresentation: [String] {
+        return [attributes.description, "\(attributes.duration) minutes"]
     }
     
 }

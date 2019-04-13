@@ -14,11 +14,13 @@ typealias ClinicianID = String
 
 class SchedulingWidget {
     
-    public func launch(_ presenter: UIViewController, withURL: ClientURL, id: ClinicianID) {
+    public func launch(_ presenter: UIViewController, with clinician: Clinician) {
         guard let splitViewController = UIStoryboard(name: "SchedulingController", bundle: nil).instantiateInitialViewController() as? MySplitView else {
             return
         }
         presenter.present(splitViewController, animated: true, completion: nil)
+        
+
     }
 }
 

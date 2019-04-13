@@ -24,11 +24,13 @@ class SchedulingStepCell: TableCell {
         configureNumberLbl(with: step)
         configureTitleLbl(with: step)
         configureDetailText(with: step)
+        
+        selectionStyle = .none
     }
     
     private func configureNumberLbl(with step: SchedulingStepViewModel) {
         guard let numberLbl = numberLbl else { return }
-        numberLbl.text = String(step.index)
+        numberLbl.text = step.index
         numberLbl.layer.borderColor = step.indexColor.cgColor
         numberLbl.layer.borderWidth = 1
         numberLbl.layer.cornerRadius = numberLbl.frame.height / 2

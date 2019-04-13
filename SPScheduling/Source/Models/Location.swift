@@ -16,7 +16,7 @@ struct LocationResponse: Response {
     
 }
 
-struct Location: APIData {
+struct Location: APIData, SchedulingData {
     
     typealias AttributeType = LocationAttributes
     
@@ -33,6 +33,13 @@ struct Location: APIData {
         var phone: String
         var isVideo: Bool
         
+        var textRepresentation: [String] {
+            return [name, street, "\(city), \(state) \(zip)", phone]
+        }
+    }
+    
+    var textRepresentation: [String] {
+        return attributes.textRepresentation
     }
     
 }
