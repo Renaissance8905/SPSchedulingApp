@@ -32,7 +32,3 @@ protocol APIData: Codable {
 }
 
 protocol Attributes: Codable {}
-
-protocol SchedulingData {
-    var textRepresentation: [String] { get }
-}

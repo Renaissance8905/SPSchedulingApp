@@ -8,9 +8,9 @@
 
 import Foundation
 
-// Stub Model to simulate data outside the scop of this widget
+// Stub Model to simulate data outside the scope of this widget
 
-struct Clinician: SchedulingData {
+public struct Clinician: SchedulingData {
     var id: ClinicianID
     var url: ClientURL
     var name: String

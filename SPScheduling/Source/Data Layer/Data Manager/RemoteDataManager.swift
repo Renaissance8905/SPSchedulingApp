@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class RemoteDataManager: DataManager {
     
     let apiClient: APIClient
@@ -16,19 +17,49 @@ class RemoteDataManager: DataManager {
         apiClient = client
     }
     
-    func fetchServices(for clinician: Clinician, _ completion: @escaping ServiceCompletion) {
-        apiClient.sendRequest(.services(clinician), completion: completion)
-    }
-    
-    func fetchLocations(for clinician: Clinician, service: Service, _ completion: @escaping LocationCompletion) {
-        apiClient.sendRequest(.locations(clinician, service), completion: completion)
-    }
-    
-    func fetchNext<T: Response>(_ response: T, completion: @escaping(Result<T>) -> ()) {
+    func getServices(for clinician: Clinician, _ completion: @escaping ServicesCompletion) {
+        
+        fetchServices(for: clinician) { (result) in
+            
+            switch result {
+            case .success(let response):
+                completion(response.data)
+                
+            default:
+                // FUTURE: more refined error-handling could happen here
+                completion(nil)
+                
+            }
+            
+        }
         
     }
     
-    func fetchPrevious<T: Response>(_ response: T, completion: @escaping(Result<T>) -> ()) {
+    func getLocations(for clinician: Clinician, service: Service, _ completion: @escaping LocationsCompletion) {
+        
+        fetchLocations(for: clinician, service: service) { (result) in
+            
+            switch result {
+            case .success(let response):
+                completion(response.data)
+                
+            default:
+                // FUTURE: more refined error-handling could happen here
+                completion(nil)
+                
+            }
+            
+        }
+        
+    }
+    
+    private func fetchServices(for clinician: Clinician, _ completion: @escaping ResultCompletion<ServiceResponse>) {
+        apiClient.sendRequest(.services(clinician), completion: completion)
+        
+    }
+    
+    private func fetchLocations(for clinician: Clinician, service: Service, _ completion: @escaping ResultCompletion<LocationResponse>) {
+        apiClient.sendRequest(.locations(clinician, service), completion: completion)
         
     }
     

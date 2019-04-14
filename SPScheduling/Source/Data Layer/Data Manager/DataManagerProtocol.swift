@@ -8,15 +8,23 @@
 
 import Foundation
 
-typealias ServiceCompletion = ResultCompletion<ServiceResponse>
-typealias LocationCompletion = ResultCompletion<LocationResponse>
+typealias ServicesCompletion = ([Service]?) -> Void
+typealias LocationsCompletion = ([Location]?) -> Void
 
 protocol DataManager {
     
-    func fetchServices(for clinician: Clinician, _ completion: @escaping ServiceCompletion)
-    func fetchLocations(for clinician: Clinician, service: Service, _ completion: @escaping LocationCompletion)
+    func getServices(for clinician: Clinician, _ completion: @escaping ServicesCompletion)
+    func getLocations(for clinician: Clinician, service: Service, _ completion: @escaping LocationsCompletion)
     
-    func fetchNext<T: Response>(_ response: T, completion: @escaping(Result<T>) -> ())
-    func fetchPrevious<T: Response>(_ response: T, completion: @escaping(Result<T>) -> ())
-    
+    func updateServices(_ services: [Service], for clinician: Clinician)
+    func updateLocations(_ locations: [Location], for clinician: Clinician, service: Service)
+
+}
+
+extension DataManager {
+
+    // Empty convenience implementations; not all versions of DM will be updatable
+    func updateServices(_ services: [Service], for clinician: Clinician) {}
+    func updateLocations(_ locations: [Location], for clinician: Clinician, service: Service) {}
+
 }

@@ -24,8 +24,26 @@
 		CD99C2C82261AC0500B46AB4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C72261AC0500B46AB4 /* APIClient.swift */; };
 		CD99C2CA2261AC0F00B46AB4 /* APIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C92261AC0F00B46AB4 /* APIProtocols.swift */; };
 		CD99C2CC2261B21800B46AB4 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2CB2261B21800B46AB4 /* APIRequestProtocol.swift */; };
-		CD99C2D12261C5CB00B46AB4 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2D02261C5CB00B46AB4 /* DetailController.swift */; };
 		CD99C2D32261D68D00B46AB4 /* SchedulingSplitViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2D22261D68D00B46AB4 /* SchedulingSplitViewContoller.swift */; };
+		CD99C2DB2262985C00B46AB4 /* ServicesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2DA2262985C00B46AB4 /* ServicesCollectionViewController.swift */; };
+		CD99C2DD226298A800B46AB4 /* LocationsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2DC226298A800B46AB4 /* LocationsCollectionViewController.swift */; };
+		CD99C2DF2262BC6F00B46AB4 /* ClinicianViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C2DE2262BC6F00B46AB4 /* ClinicianViewController.storyboard */; };
+		CD99C2E22262C19F00B46AB4 /* ClinicianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2E12262C19F00B46AB4 /* ClinicianViewController.swift */; };
+		CD99C2E42262C1AA00B46AB4 /* DateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2E32262C1AA00B46AB4 /* DateTimeViewController.swift */; };
+		CD99C2E62262C1B700B46AB4 /* YourInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2E52262C1B700B46AB4 /* YourInfoViewController.swift */; };
+		CD99C2E82262C4F300B46AB4 /* DateTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C2E72262C4F300B46AB4 /* DateTimeViewController.storyboard */; };
+		CD99C2EA2262C76F00B46AB4 /* YourInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C2E92262C76F00B46AB4 /* YourInfoViewController.storyboard */; };
+		CD99C2EC2262CEF500B46AB4 /* SchedulingDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2EB2262CEF500B46AB4 /* SchedulingDataProtocol.swift */; };
+		CD99C2EE2262CF2B00B46AB4 /* ClientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2ED2262CF2B00B46AB4 /* ClientInfo.swift */; };
+		CD99C2F12262D0A900B46AB4 /* Int+TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2F02262D0A900B46AB4 /* Int+TimeInterval.swift */; };
+		CD99C2F32262D21800B46AB4 /* UICollectionViewCell+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2F22262D21800B46AB4 /* UICollectionViewCell+Shadow.swift */; };
+		CD99C2F52262D22700B46AB4 /* UIButton+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2F42262D22700B46AB4 /* UIButton+Format.swift */; };
+		CD99C2FD2262D36A00B46AB4 /* AppointmentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2FC2262D36A00B46AB4 /* AppointmentTime.swift */; };
+		CD99C3012262D53900B46AB4 /* SchedulingDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3002262D53900B46AB4 /* SchedulingDetailProtocol.swift */; };
+		CD99C3032262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3022262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift */; };
+		CD99C3052263A13300B46AB4 /* Container.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C3042263A13300B46AB4 /* Container.storyboard */; };
+		CD99C3072263E4B500B46AB4 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3062263E4B500B46AB4 /* LocalDataManager.swift */; };
+		CD99C3092263E4BE00B46AB4 /* HybridDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3082263E4BE00B46AB4 /* HybridDataManager.swift */; };
 		CDEEB49322604D7100E01CAE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49222604D7100E01CAE /* LaunchViewController.swift */; };
 		CDEEB49522604E0D00E01CAE /* SchedulingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */; };
 		CDEEB49E226057EC00E01CAE /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49C226057EC00E01CAE /* ServiceCell.swift */; };
@@ -74,8 +92,26 @@
 		CD99C2C72261AC0500B46AB4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		CD99C2C92261AC0F00B46AB4 /* APIProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocols.swift; sourceTree = "<group>"; };
 		CD99C2CB2261B21800B46AB4 /* APIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
-		CD99C2D02261C5CB00B46AB4 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		CD99C2D22261D68D00B46AB4 /* SchedulingSplitViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SchedulingSplitViewContoller.swift; path = SPScheduling/Source/SchedulingSplitViewContoller.swift; sourceTree = "<group>"; };
+		CD99C2DA2262985C00B46AB4 /* ServicesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewController.swift; sourceTree = "<group>"; };
+		CD99C2DC226298A800B46AB4 /* LocationsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCollectionViewController.swift; sourceTree = "<group>"; };
+		CD99C2DE2262BC6F00B46AB4 /* ClinicianViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClinicianViewController.storyboard; sourceTree = "<group>"; };
+		CD99C2E12262C19F00B46AB4 /* ClinicianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicianViewController.swift; sourceTree = "<group>"; };
+		CD99C2E32262C1AA00B46AB4 /* DateTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeViewController.swift; sourceTree = "<group>"; };
+		CD99C2E52262C1B700B46AB4 /* YourInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourInfoViewController.swift; sourceTree = "<group>"; };
+		CD99C2E72262C4F300B46AB4 /* DateTimeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DateTimeViewController.storyboard; sourceTree = "<group>"; };
+		CD99C2E92262C76F00B46AB4 /* YourInfoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YourInfoViewController.storyboard; sourceTree = "<group>"; };
+		CD99C2EB2262CEF500B46AB4 /* SchedulingDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingDataProtocol.swift; sourceTree = "<group>"; };
+		CD99C2ED2262CF2B00B46AB4 /* ClientInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfo.swift; sourceTree = "<group>"; };
+		CD99C2F02262D0A900B46AB4 /* Int+TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+TimeInterval.swift"; sourceTree = "<group>"; };
+		CD99C2F22262D21800B46AB4 /* UICollectionViewCell+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Shadow.swift"; sourceTree = "<group>"; };
+		CD99C2F42262D22700B46AB4 /* UIButton+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Format.swift"; sourceTree = "<group>"; };
+		CD99C2FC2262D36A00B46AB4 /* AppointmentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTime.swift; sourceTree = "<group>"; };
+		CD99C3002262D53900B46AB4 /* SchedulingDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingDetailProtocol.swift; sourceTree = "<group>"; };
+		CD99C3022262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingDetailCollectionProtocol.swift; sourceTree = "<group>"; };
+		CD99C3042263A13300B46AB4 /* Container.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Container.storyboard; sourceTree = "<group>"; };
+		CD99C3062263E4B500B46AB4 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		CD99C3082263E4BE00B46AB4 /* HybridDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridDataManager.swift; sourceTree = "<group>"; };
 		CDEEB49222604D7100E01CAE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingWidget.swift; sourceTree = "<group>"; };
 		CDEEB498226050AF00E01CAE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +192,7 @@
 				CD1001A5226021CF009FD15D /* Assets.xcassets */,
 				CD1001C02260232D009FD15D /* Stubs */,
 				CD1001BF22602323009FD15D /* Views */,
+				CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -163,12 +200,11 @@
 		CD1001BF22602323009FD15D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CDEEB4B422607F9900E01CAE /* SchedulingStepCell.xib */,
-				CDEEB49D226057EC00E01CAE /* ServiceCell.xib */,
+				CD99C2FF2262D45700B46AB4 /* Screens */,
+				CD99C2FE2262D3F400B46AB4 /* Cells */,
 				CD1001A2226021CE009FD15D /* Main.storyboard */,
+				CD99C3042263A13300B46AB4 /* Container.storyboard */,
 				CDEEB4AB22605D6C00E01CAE /* SchedulingSplitViewController.storyboard */,
-				CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */,
-				CDEEB4A12260581900E01CAE /* LocationCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,28 +221,23 @@
 		CD1001C5226024AD009FD15D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CD10019E226021CE009FD15D /* AppDelegate.swift */,
-				CDEEB4BB2260823F00E01CAE /* Scheduling Step */,
-				CD1001C6226024CD009FD15D /* Models */,
-				CDEEB49222604D7100E01CAE /* LaunchViewController.swift */,
-				CD99C2D02261C5CB00B46AB4 /* DetailController.swift */,
-				CDEEB4A922605AF600E01CAE /* UIColor+SchedulingWidget.swift */,
 				CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */,
-				CDEEB4A82260583500E01CAE /* Cells */,
+				CD99C2EB2262CEF500B46AB4 /* SchedulingDataProtocol.swift */,
+				CDEEB4AF226061A900E01CAE /* TableCellProtocol.swift */,
+				CDEEB4BB2260823F00E01CAE /* Scheduling Step */,
+				CD99C2F82262D2BB00B46AB4 /* Clinician */,
+				CD99C2F62262D25A00B46AB4 /* Services */,
+				CD99C2F72262D26700B46AB4 /* Locations */,
+				CD99C2F92262D2C100B46AB4 /* Appointment Time */,
+				CD99C2FA2262D2D100B46AB4 /* Your Info */,
+				CD10019E226021CE009FD15D /* AppDelegate.swift */,
+				CDEEB49222604D7100E01CAE /* LaunchViewController.swift */,
+				CD99C2EF2262D09900B46AB4 /* Extensions */,
 				CD99C2BE2261ABC700B46AB4 /* Data Layer */,
+				CD99C3002262D53900B46AB4 /* SchedulingDetailProtocol.swift */,
+				CD99C3022262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		CD1001C6226024CD009FD15D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CD1001C7226024E9009FD15D /* Service.swift */,
-				CD1001C922602594009FD15D /* Location.swift */,
-				CD1001CB226027A4009FD15D /* APIResponseProtocols.swift */,
-				CDEEB4BC226086A900E01CAE /* Clinician.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		CD99C2BE2261ABC700B46AB4 /* Data Layer */ = {
@@ -223,8 +254,10 @@
 			isa = PBXGroup;
 			children = (
 				CD99C2BF2261ABDE00B46AB4 /* DataManagerProtocol.swift */,
+				CD99C3082263E4BE00B46AB4 /* HybridDataManager.swift */,
 				CD99C2C12261ABE800B46AB4 /* RemoteDataManager.swift */,
 				CD99C2C32261ABF000B46AB4 /* StubDataManager.swift */,
+				CD99C3062263E4B500B46AB4 /* LocalDataManager.swift */,
 			);
 			path = "Data Manager";
 			sourceTree = "<group>";
@@ -232,6 +265,7 @@
 		CD99C2CE2261B2AF00B46AB4 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				CD1001CB226027A4009FD15D /* APIResponseProtocols.swift */,
 				CD99C2C52261ABFE00B46AB4 /* Request.swift */,
 				CD99C2CB2261B21800B46AB4 /* APIRequestProtocol.swift */,
 			);
@@ -247,22 +281,90 @@
 			path = "API Client";
 			sourceTree = "<group>";
 		};
-		CDEEB4A82260583500E01CAE /* Cells */ = {
+		CD99C2EF2262D09900B46AB4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				CDEEB4AF226061A900E01CAE /* TableCellProtocol.swift */,
+				CDEEB4A922605AF600E01CAE /* UIColor+SchedulingWidget.swift */,
+				CD99C2F02262D0A900B46AB4 /* Int+TimeInterval.swift */,
+				CD99C2F22262D21800B46AB4 /* UICollectionViewCell+Shadow.swift */,
+				CD99C2F42262D22700B46AB4 /* UIButton+Format.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD99C2F62262D25A00B46AB4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD99C2DA2262985C00B46AB4 /* ServicesCollectionViewController.swift */,
 				CDEEB49C226057EC00E01CAE /* ServiceCell.swift */,
+				CD1001C7226024E9009FD15D /* Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CD99C2F72262D26700B46AB4 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				CD99C2DC226298A800B46AB4 /* LocationsCollectionViewController.swift */,
 				CDEEB4A02260581900E01CAE /* LocationCell.swift */,
+				CD1001C922602594009FD15D /* Location.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		CD99C2F82262D2BB00B46AB4 /* Clinician */ = {
+			isa = PBXGroup;
+			children = (
+				CDEEB4BC226086A900E01CAE /* Clinician.swift */,
+				CD99C2E12262C19F00B46AB4 /* ClinicianViewController.swift */,
+			);
+			path = Clinician;
+			sourceTree = "<group>";
+		};
+		CD99C2F92262D2C100B46AB4 /* Appointment Time */ = {
+			isa = PBXGroup;
+			children = (
+				CD99C2FC2262D36A00B46AB4 /* AppointmentTime.swift */,
+				CD99C2E32262C1AA00B46AB4 /* DateTimeViewController.swift */,
+			);
+			path = "Appointment Time";
+			sourceTree = "<group>";
+		};
+		CD99C2FA2262D2D100B46AB4 /* Your Info */ = {
+			isa = PBXGroup;
+			children = (
+				CD99C2ED2262CF2B00B46AB4 /* ClientInfo.swift */,
+				CD99C2E52262C1B700B46AB4 /* YourInfoViewController.swift */,
+			);
+			path = "Your Info";
+			sourceTree = "<group>";
+		};
+		CD99C2FE2262D3F400B46AB4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CDEEB4B422607F9900E01CAE /* SchedulingStepCell.xib */,
+				CDEEB49D226057EC00E01CAE /* ServiceCell.xib */,
+				CDEEB4A12260581900E01CAE /* LocationCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CD99C2FF2262D45700B46AB4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CD99C2DE2262BC6F00B46AB4 /* ClinicianViewController.storyboard */,
+				CD99C2E72262C4F300B46AB4 /* DateTimeViewController.storyboard */,
+				CD99C2E92262C76F00B46AB4 /* YourInfoViewController.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		CDEEB4BB2260823F00E01CAE /* Scheduling Step */ = {
 			isa = PBXGroup;
 			children = (
+				CDEEB4B72260820900E01CAE /* SchedulingStep.swift */,
 				CDEEB4AD2260610300E01CAE /* SchedulingStepController.swift */,
 				CDEEB4A42260582C00E01CAE /* SchedulingStepCell.swift */,
-				CDEEB4B72260820900E01CAE /* SchedulingStep.swift */,
 				CDEEB4B92260821300E01CAE /* SchedulingStepViewModel.swift */,
 			);
 			path = "Scheduling Step";
@@ -352,11 +454,15 @@
 				CD1001C422602386009FD15D /* stubGetLocations.json in Resources */,
 				CDEEB4A32260581900E01CAE /* LocationCell.xib in Resources */,
 				CD1001A9226021CF009FD15D /* LaunchScreen.storyboard in Resources */,
+				CD99C2DF2262BC6F00B46AB4 /* ClinicianViewController.storyboard in Resources */,
+				CD99C2E82262C4F300B46AB4 /* DateTimeViewController.storyboard in Resources */,
 				CDEEB4AC22605D6C00E01CAE /* SchedulingSplitViewController.storyboard in Resources */,
 				CD1001A6226021CF009FD15D /* Assets.xcassets in Resources */,
+				CD99C2EA2262C76F00B46AB4 /* YourInfoViewController.storyboard in Resources */,
 				CD1001C22260234B009FD15D /* stubGetServices.json in Resources */,
 				CD1001A4226021CE009FD15D /* Main.storyboard in Resources */,
 				CDEEB4B622607F9900E01CAE /* SchedulingStepCell.xib in Resources */,
+				CD99C3052263A13300B46AB4 /* Container.storyboard in Resources */,
 				CDEEB49F226057EC00E01CAE /* ServiceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,27 +484,41 @@
 				CDEEB4BA2260821300E01CAE /* SchedulingStepViewModel.swift in Sources */,
 				CD99C2C02261ABDE00B46AB4 /* DataManagerProtocol.swift in Sources */,
 				CDEEB4B0226061A900E01CAE /* TableCellProtocol.swift in Sources */,
+				CD99C2EC2262CEF500B46AB4 /* SchedulingDataProtocol.swift in Sources */,
+				CD99C2E22262C19F00B46AB4 /* ClinicianViewController.swift in Sources */,
+				CD99C2DD226298A800B46AB4 /* LocationsCollectionViewController.swift in Sources */,
+				CD99C2F52262D22700B46AB4 /* UIButton+Format.swift in Sources */,
 				CD1001CC226027A4009FD15D /* APIResponseProtocols.swift in Sources */,
 				CD99C2C42261ABF000B46AB4 /* StubDataManager.swift in Sources */,
 				CDEEB4B82260820900E01CAE /* SchedulingStep.swift in Sources */,
 				CDEEB49322604D7100E01CAE /* LaunchViewController.swift in Sources */,
 				CD99C2C82261AC0500B46AB4 /* APIClient.swift in Sources */,
 				CDEEB49522604E0D00E01CAE /* SchedulingWidget.swift in Sources */,
+				CD99C2E62262C1B700B46AB4 /* YourInfoViewController.swift in Sources */,
 				CDEEB4AA22605AF600E01CAE /* UIColor+SchedulingWidget.swift in Sources */,
 				CDEEB4AE2260610300E01CAE /* SchedulingStepController.swift in Sources */,
+				CD99C3072263E4B500B46AB4 /* LocalDataManager.swift in Sources */,
 				CDEEB49E226057EC00E01CAE /* ServiceCell.swift in Sources */,
 				CD10019F226021CE009FD15D /* AppDelegate.swift in Sources */,
-				CD99C2D12261C5CB00B46AB4 /* DetailController.swift in Sources */,
 				CD99C2CA2261AC0F00B46AB4 /* APIProtocols.swift in Sources */,
+				CD99C2DB2262985C00B46AB4 /* ServicesCollectionViewController.swift in Sources */,
+				CD99C2FD2262D36A00B46AB4 /* AppointmentTime.swift in Sources */,
+				CD99C2EE2262CF2B00B46AB4 /* ClientInfo.swift in Sources */,
 				CDEEB4A62260582C00E01CAE /* SchedulingStepCell.swift in Sources */,
 				CD1001CA22602594009FD15D /* Location.swift in Sources */,
+				CD99C3092263E4BE00B46AB4 /* HybridDataManager.swift in Sources */,
+				CD99C2F32262D21800B46AB4 /* UICollectionViewCell+Shadow.swift in Sources */,
 				CD99C2CC2261B21800B46AB4 /* APIRequestProtocol.swift in Sources */,
+				CD99C3032262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift in Sources */,
 				CDEEB4BD226086A900E01CAE /* Clinician.swift in Sources */,
+				CD99C3012262D53900B46AB4 /* SchedulingDetailProtocol.swift in Sources */,
 				CD99C2C22261ABE800B46AB4 /* RemoteDataManager.swift in Sources */,
 				CD99C2D32261D68D00B46AB4 /* SchedulingSplitViewContoller.swift in Sources */,
+				CD99C2F12262D0A900B46AB4 /* Int+TimeInterval.swift in Sources */,
 				CD99C2C62261ABFE00B46AB4 /* Request.swift in Sources */,
 				CDEEB4A22260581900E01CAE /* LocationCell.swift in Sources */,
 				CD1001C8226024E9009FD15D /* Service.swift in Sources */,
+				CD99C2E42262C1AA00B46AB4 /* DateTimeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

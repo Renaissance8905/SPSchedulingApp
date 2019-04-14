@@ -12,8 +12,12 @@ typealias TableCell = UITableViewCell & CellProtocol
 typealias CollectionCell = UICollectionViewCell & CellProtocol
 
 protocol CellProtocol {
+    
     static var identifier: String   { get }
     static var nibName: String      { get }
+    
+    func configure()
+    
 }
 
 extension CellProtocol where Self: UIView {

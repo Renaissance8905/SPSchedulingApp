@@ -14,48 +14,56 @@ class SchedulingStepCell: TableCell {
     @IBOutlet var titleLbl: UILabel?
     @IBOutlet var detailLblStack: UIStackView?
     
+    private var viewModel: SchedulingStepViewModel?
+    
     static func cell(for tableView: UITableView, with viewModel: SchedulingStepViewModel) -> SchedulingStepCell {
         let cell = self.cell(for: tableView) ?? SchedulingStepCell()
-        cell.configure(with: viewModel)
+        cell.viewModel = viewModel
+        cell.configure()
         return cell
     }
     
-    func configure(with step: SchedulingStepViewModel) {
-        configureNumberLbl(with: step)
-        configureTitleLbl(with: step)
-        configureDetailText(with: step)
+    func configure() {
+        
+        configureNumberLbl(with: viewModel)
+        configureTitleLbl(with: viewModel)
+        configureDetailText(with: viewModel)
         
         selectionStyle = .none
         
     }
     
-    private func configureNumberLbl(with step: SchedulingStepViewModel) {
+    private func configureNumberLbl(with step: SchedulingStepViewModel?) {
         guard let numberLbl = numberLbl else { return }
-        numberLbl.text = step.index
-        numberLbl.layer.borderColor = step.indexColor.cgColor
+        numberLbl.text = step?.index
+        numberLbl.layer.borderColor = step?.indexColor.cgColor
         numberLbl.layer.borderWidth = 1
         numberLbl.layer.cornerRadius = numberLbl.frame.height / 2
-        numberLbl.textColor = step.indexColor
+        numberLbl.textColor = step?.indexColor
 
     }
     
-    private func configureTitleLbl(with step: SchedulingStepViewModel) {
-        titleLbl?.text = step.title
-        titleLbl?.textColor = step.titleColor
-        titleLbl?.font = step.titleFont
+    private func configureTitleLbl(with step: SchedulingStepViewModel?) {
+        titleLbl?.text      = step?.title
+        titleLbl?.textColor = step?.titleColor
+        titleLbl?.font      = step?.titleFont
         
     }
     
-    private func configureDetailText(with step: SchedulingStepViewModel) {
+    private func configureDetailText(with step: SchedulingStepViewModel?) {
         guard let stack = detailLblStack else { return }
         
         for subView in stack.arrangedSubviews {
-            stack.removeArrangedSubview(subView)
+            subView.removeFromSuperview()
         }
 
-        for detail in step.detailText {
+        guard let detailText = step?.detailText else { return }
+        for detail in detailText {
             let detailLbl = UILabel()
             detailLbl.text = detail
+            detailLbl.numberOfLines = 0
+            detailLbl.lineBreakMode = .byWordWrapping
+            detailLbl.setContentCompressionResistancePriority(.required, for: .vertical)
             detailLbl.textColor = .secondaryBlue
             stack.addArrangedSubview(detailLbl)
         }

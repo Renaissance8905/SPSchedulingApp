@@ -34,7 +34,15 @@ struct Location: APIData, SchedulingData {
         var isVideo: Bool
         
         var textRepresentation: [String] {
-            return [name, street, "\(city), \(state) \(zip)", phone]
+            return [name, addressLine1, addressLine2, phone]
+        }
+        
+        var addressLine1: String {
+            return street
+        }
+        
+        var addressLine2: String {
+            return "\(city), \(state) \(zip)"
         }
     }
     

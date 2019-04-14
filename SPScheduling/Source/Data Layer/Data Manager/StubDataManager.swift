@@ -10,36 +10,44 @@ import Foundation
 
 class StubDataManager: DataManager {
     
-    func fetchServices(for clinician: Clinician, _ completion: @escaping ServiceCompletion) {
+    func getServices(for clinician: Clinician, _ completion: @escaping ServicesCompletion) {
         do {
-            let path = Bundle.main.path(forResource: "stubGetServices", ofType: "json")
-            let data = try Data(contentsOf: URL(fileURLWithPath: path!, isDirectory: false))
-            let response = try JSONDecoder().decode(ServiceResponse.self, from: data)
-            completion(.success(response))
+            completion(try parse(ServiceResponse.self, filename: "stubGetServices"))
+            
         } catch let error {
             print(error)
-            return
+            completion(nil)
+            
         }
-    }
-    
-    func fetchLocations(for clinician: Clinician, service: Service, _ completion: @escaping LocationCompletion) {
-        do {
-            let path = Bundle.main.path(forResource: "stubGetLocations", ofType: "json")
-            let data = try Data(contentsOf: URL(fileURLWithPath: path!, isDirectory: false))
-            let response = try JSONDecoder().decode(LocationResponse.self, from: data)
-            completion(.success(response))
-        } catch let error {
-            print(error)
-            return
-        }
-    }
-    
-    func fetchNext<T: Response>(_ response: T, completion: @escaping(Result<T>) -> ()) {
         
     }
     
-    func fetchPrevious<T: Response>(_ response: T, completion: @escaping(Result<T>) -> ()) {
+    func getLocations(for clinician: Clinician, service: Service, _ completion: @escaping LocationsCompletion) {
+        do {
+            completion(try parse(LocationResponse.self, filename: "stubGetLocations"))
+            
+        } catch let error {
+            print(error)
+            completion(nil)
+            
+        }
         
+    }
+    
+    private func parse<T: Response>(_ type: T.Type, filename: String) throws -> [T.DataType] {
+        return  try decode(T.self, filename: filename).data
+        
+    }
+    
+    private func decode<T: Decodable>(_ type: T.Type, filename: String) throws -> T {
+        return try JSONDecoder().decode(T.self, from: try data(from: filename))
+        
+    }
+    
+    private func data(from filename: String) throws -> Data {
+        let path = Bundle.main.path(forResource: filename, ofType: "json")
+        return try Data(contentsOf: URL(fileURLWithPath: path!, isDirectory: false))
+
     }
     
 }

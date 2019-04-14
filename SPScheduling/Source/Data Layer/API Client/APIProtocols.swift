@@ -17,6 +17,7 @@ enum Result<T> {
 }
 
 enum APIClientError: Error {
+    case missingInputData
     case badURL
 }
 
