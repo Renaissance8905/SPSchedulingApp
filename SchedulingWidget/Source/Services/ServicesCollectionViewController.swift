@@ -48,29 +48,32 @@ class ServicesCollectionViewController: UIViewController, SchedulingCollectionVi
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return data.count
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 500, height: 140)
+        return CGSize(width: collectionView.frame.width * 0.8, height: 140)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 20, left: 100, bottom: 20, right: 0)
-        
+        return UIEdgeInsets(top: 40, left: 0, bottom: 300, right: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 50
+        return 500
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 40
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return ServiceCell.cell(for: collectionView, indexPath: indexPath, with: data[indexPath.section], selectionBlock)
+        return ServiceCell.cell(for: collectionView, indexPath: indexPath, with: data[indexPath.item], selectionBlock)
         
     }
     
