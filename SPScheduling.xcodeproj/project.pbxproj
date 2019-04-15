@@ -98,7 +98,7 @@
 		CD99C2C72261AC0500B46AB4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		CD99C2C92261AC0F00B46AB4 /* APIProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocols.swift; sourceTree = "<group>"; };
 		CD99C2CB2261B21800B46AB4 /* APIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
-		CD99C2D22261D68D00B46AB4 /* SchedulingSplitViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SchedulingSplitViewContoller.swift; path = SPScheduling/Source/SchedulingSplitViewContoller.swift; sourceTree = "<group>"; };
+		CD99C2D22261D68D00B46AB4 /* SchedulingSplitViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingSplitViewContoller.swift; sourceTree = "<group>"; };
 		CD99C2DA2262985C00B46AB4 /* ServicesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewController.swift; sourceTree = "<group>"; };
 		CD99C2DC226298A800B46AB4 /* LocationsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCollectionViewController.swift; sourceTree = "<group>"; };
 		CD99C2DE2262BC6F00B46AB4 /* ClinicianViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClinicianViewController.storyboard; sourceTree = "<group>"; };
@@ -163,7 +163,6 @@
 		CD100192226021CD009FD15D = {
 			isa = PBXGroup;
 			children = (
-				CD99C2D22261D68D00B46AB4 /* SchedulingSplitViewContoller.swift */,
 				CD10019D226021CD009FD15D /* SPScheduling */,
 				CD1001B2226021CF009FD15D /* SPSchedulingTests */,
 				CD10019C226021CD009FD15D /* Products */,
@@ -234,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */,
+				CD99C2D22261D68D00B46AB4 /* SchedulingSplitViewContoller.swift */,
 				CD99C31322645D8400B46AB4 /* ContainerViewController.swift */,
 				CD99C30A2263EB7100B46AB4 /* Protocols */,
 				CDEEB4BB2260823F00E01CAE /* Scheduling Step */,
