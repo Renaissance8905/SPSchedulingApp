@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SchedulingWidget
 
 class LaunchViewController: UIViewController {
         
@@ -67,22 +68,8 @@ class LaunchViewController: UIViewController {
     }
     
     func displayAppointment(_ appt: Appointment) {
-        var fullname = ""
-        if let practice = appt.clinician.practiceName {
-            fullname = "with \n\n\(practice)"
-        }
-        if let name = appt.clinician.name {
-            if !fullname.isEmpty {
-                fullname.append("'s ")
-            } else {
-                fullname.append("with \n\n")
-            }
-            fullname.append(name)
-            
-        }
-        
-        let message = "Your appointment \(fullname) \n\nfor \(appt.service.attributes.description) \n\nat \(appt.location.attributes.name) \n\non \(appt.apptTime.dateString), \(appt.apptTime.timeString) \n\nis confirmed."
-        let alert = UIAlertController(title: "Congrats, \(appt.clientInfo.name)!", message: message, preferredStyle: .alert)
+
+        let alert = UIAlertController(title: "Congrats, \(appt.clientName)!", message: appt.successMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cool thx", style: .default, handler: nil))
         present(alert, animated: true)
     }

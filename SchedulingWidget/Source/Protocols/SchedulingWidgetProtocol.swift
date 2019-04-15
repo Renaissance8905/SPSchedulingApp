@@ -12,11 +12,6 @@ public typealias AppointmentReturn = ((Appointment) -> Void)?
 
 public protocol SchedulingWidgetProtocol {
     
-//    init(apiClient: APIClient)
-//    init(apiClient: APIClient, clinician: Clinician?)
-//
-//    func launch(_ presenter: UIViewController, result: AppointmentReturn)
-//
     static func launchWithClinician(_ clinician: Clinician?, apiClient: APIClient, presenter: UIViewController, result: AppointmentReturn)
 
 }

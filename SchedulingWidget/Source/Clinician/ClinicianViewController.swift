@@ -17,11 +17,11 @@ class ClinicianViewController:  UIViewController, SchedulingDetailViewController
     @IBOutlet var clinicianNameField: UITextField?
     @IBOutlet var selectBtn: UIButton?
     
-    private var inputURL: ClientURL? {
+    private var inputURL: String? {
         return clientURLField?.text
     }
     
-    private var inputID: ClinicianID? {
+    private var inputID: String? {
         return clinicianIDField?.text
     }
     

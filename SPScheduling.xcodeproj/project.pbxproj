@@ -14,57 +14,62 @@
 		CD1001B4226021CF009FD15D /* SPSchedulingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001B3226021CF009FD15D /* SPSchedulingTests.swift */; };
 		CD1001C22260234B009FD15D /* stubGetServices.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1001C12260234B009FD15D /* stubGetServices.json */; };
 		CD1001C422602386009FD15D /* stubGetLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1001C322602386009FD15D /* stubGetLocations.json */; };
-		CD1001C8226024E9009FD15D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001C7226024E9009FD15D /* Service.swift */; };
-		CD1001CA22602594009FD15D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001C922602594009FD15D /* Location.swift */; };
-		CD1001CC226027A4009FD15D /* APIResponseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001CB226027A4009FD15D /* APIResponseProtocols.swift */; };
-		CD99C2C02261ABDE00B46AB4 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2BF2261ABDE00B46AB4 /* DataManagerProtocol.swift */; };
-		CD99C2C22261ABE800B46AB4 /* RemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C12261ABE800B46AB4 /* RemoteDataManager.swift */; };
-		CD99C2C42261ABF000B46AB4 /* StubDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C32261ABF000B46AB4 /* StubDataManager.swift */; };
-		CD99C2C62261ABFE00B46AB4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C52261ABFE00B46AB4 /* Request.swift */; };
-		CD99C2C82261AC0500B46AB4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C72261AC0500B46AB4 /* APIClient.swift */; };
-		CD99C2CA2261AC0F00B46AB4 /* APIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C92261AC0F00B46AB4 /* APIProtocols.swift */; };
-		CD99C2CC2261B21800B46AB4 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2CB2261B21800B46AB4 /* APIRequestProtocol.swift */; };
-		CD99C2D32261D68D00B46AB4 /* SchedulingSplitViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2D22261D68D00B46AB4 /* SchedulingSplitViewContoller.swift */; };
-		CD99C2DB2262985C00B46AB4 /* ServicesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2DA2262985C00B46AB4 /* ServicesCollectionViewController.swift */; };
-		CD99C2DD226298A800B46AB4 /* LocationsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2DC226298A800B46AB4 /* LocationsCollectionViewController.swift */; };
-		CD99C2DF2262BC6F00B46AB4 /* ClinicianViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C2DE2262BC6F00B46AB4 /* ClinicianViewController.storyboard */; };
-		CD99C2E22262C19F00B46AB4 /* ClinicianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2E12262C19F00B46AB4 /* ClinicianViewController.swift */; };
-		CD99C2E42262C1AA00B46AB4 /* DateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2E32262C1AA00B46AB4 /* DateTimeViewController.swift */; };
-		CD99C2E62262C1B700B46AB4 /* YourInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2E52262C1B700B46AB4 /* YourInfoViewController.swift */; };
-		CD99C2E82262C4F300B46AB4 /* DateTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C2E72262C4F300B46AB4 /* DateTimeViewController.storyboard */; };
-		CD99C2EA2262C76F00B46AB4 /* YourInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C2E92262C76F00B46AB4 /* YourInfoViewController.storyboard */; };
-		CD99C2EC2262CEF500B46AB4 /* SchedulingDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2EB2262CEF500B46AB4 /* SchedulingDataProtocol.swift */; };
-		CD99C2EE2262CF2B00B46AB4 /* ClientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2ED2262CF2B00B46AB4 /* ClientInfo.swift */; };
-		CD99C2F12262D0A900B46AB4 /* Int+TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2F02262D0A900B46AB4 /* Int+TimeInterval.swift */; };
-		CD99C2F32262D21800B46AB4 /* UICollectionViewCell+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2F22262D21800B46AB4 /* UICollectionViewCell+Shadow.swift */; };
-		CD99C2F52262D22700B46AB4 /* UIButton+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2F42262D22700B46AB4 /* UIButton+Format.swift */; };
-		CD99C2FD2262D36A00B46AB4 /* AppointmentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2FC2262D36A00B46AB4 /* AppointmentTime.swift */; };
-		CD99C3012262D53900B46AB4 /* SchedulingDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3002262D53900B46AB4 /* SchedulingDetailProtocol.swift */; };
-		CD99C3032262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3022262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift */; };
-		CD99C3052263A13300B46AB4 /* ContainerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C3042263A13300B46AB4 /* ContainerViewController.storyboard */; };
-		CD99C3072263E4B500B46AB4 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3062263E4B500B46AB4 /* LocalDataManager.swift */; };
-		CD99C3092263E4BE00B46AB4 /* HybridDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3082263E4BE00B46AB4 /* HybridDataManager.swift */; };
-		CD99C30C2263EB8C00B46AB4 /* SchedulingWidgetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C30B2263EB8C00B46AB4 /* SchedulingWidgetProtocol.swift */; };
-		CD99C30E2263EBF500B46AB4 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C30D2263EBF500B46AB4 /* APIClientProtocol.swift */; };
-		CD99C3102263F03F00B46AB4 /* SchedulingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C30F2263F03F00B46AB4 /* SchedulingViewControllerProtocol.swift */; };
-		CD99C31222645D5B00B46AB4 /* UIAlertController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C31122645D5B00B46AB4 /* UIAlertController+Alerts.swift */; };
-		CD99C31422645D8400B46AB4 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C31322645D8400B46AB4 /* ContainerViewController.swift */; };
-		CD99C3162264726400B46AB4 /* SchedulingProgressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3152264726400B46AB4 /* SchedulingProgressModel.swift */; };
+		CDE55C6722647DD000010446 /* SchedulingWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE55C5E22647DD000010446 /* SchedulingWidget.framework */; };
+		CDE55C6E22647DD000010446 /* SchedulingWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE55C6D22647DD000010446 /* SchedulingWidgetTests.swift */; };
+		CDE55C7022647DD000010446 /* SchedulingWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE55C6022647DD000010446 /* SchedulingWidget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDE55C7322647DD000010446 /* SchedulingWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE55C5E22647DD000010446 /* SchedulingWidget.framework */; };
+		CDE55C7422647DD000010446 /* SchedulingWidget.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDE55C5E22647DD000010446 /* SchedulingWidget.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDE55C7E22647E7800010446 /* SchedulingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */; };
+		CDE55C7F22647E7800010446 /* SchedulingSplitViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2D22261D68D00B46AB4 /* SchedulingSplitViewContoller.swift */; };
+		CDE55C8022647E7800010446 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C31322645D8400B46AB4 /* ContainerViewController.swift */; };
+		CDE55C8122647E7800010446 /* SchedulingDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2EB2262CEF500B46AB4 /* SchedulingDataProtocol.swift */; };
+		CDE55C8222647E7800010446 /* TableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4AF226061A900E01CAE /* TableCellProtocol.swift */; };
+		CDE55C8322647E7800010446 /* SchedulingWidgetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C30B2263EB8C00B46AB4 /* SchedulingWidgetProtocol.swift */; };
+		CDE55C8422647E7800010446 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C30D2263EBF500B46AB4 /* APIClientProtocol.swift */; };
+		CDE55C8522647E7800010446 /* SchedulingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C30F2263F03F00B46AB4 /* SchedulingViewControllerProtocol.swift */; };
+		CDE55C8622647E7800010446 /* SchedulingDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3002262D53900B46AB4 /* SchedulingDetailProtocol.swift */; };
+		CDE55C8722647E7800010446 /* SchedulingDetailCollectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3022262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift */; };
+		CDE55C8822647E7800010446 /* SchedulingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4B72260820900E01CAE /* SchedulingStep.swift */; };
+		CDE55C8922647E7800010446 /* SchedulingStepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4AD2260610300E01CAE /* SchedulingStepController.swift */; };
+		CDE55C8A22647E7800010446 /* SchedulingStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4A42260582C00E01CAE /* SchedulingStepCell.swift */; };
+		CDE55C8B22647E7800010446 /* SchedulingStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4B92260821300E01CAE /* SchedulingStepViewModel.swift */; };
+		CDE55C8C22647E7800010446 /* Clinician.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4BC226086A900E01CAE /* Clinician.swift */; };
+		CDE55C8D22647E7800010446 /* ClinicianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2E12262C19F00B46AB4 /* ClinicianViewController.swift */; };
+		CDE55C8E22647E7800010446 /* ServicesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2DA2262985C00B46AB4 /* ServicesCollectionViewController.swift */; };
+		CDE55C8F22647E7800010446 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49C226057EC00E01CAE /* ServiceCell.swift */; };
+		CDE55C9022647E7800010446 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001C7226024E9009FD15D /* Service.swift */; };
+		CDE55C9122647E7800010446 /* LocationsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2DC226298A800B46AB4 /* LocationsCollectionViewController.swift */; };
+		CDE55C9222647E7800010446 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4A02260581900E01CAE /* LocationCell.swift */; };
+		CDE55C9322647E7800010446 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001C922602594009FD15D /* Location.swift */; };
+		CDE55C9422647E7800010446 /* AppointmentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2FC2262D36A00B46AB4 /* AppointmentTime.swift */; };
+		CDE55C9522647E7800010446 /* DateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2E32262C1AA00B46AB4 /* DateTimeViewController.swift */; };
+		CDE55C9622647E7800010446 /* ClientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2ED2262CF2B00B46AB4 /* ClientInfo.swift */; };
+		CDE55C9722647E7800010446 /* YourInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2E52262C1B700B46AB4 /* YourInfoViewController.swift */; };
+		CDE55C9822647E7800010446 /* UIColor+SchedulingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4A922605AF600E01CAE /* UIColor+SchedulingWidget.swift */; };
+		CDE55C9922647E7800010446 /* Int+TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2F02262D0A900B46AB4 /* Int+TimeInterval.swift */; };
+		CDE55C9A22647E7800010446 /* UICollectionViewCell+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2F22262D21800B46AB4 /* UICollectionViewCell+Shadow.swift */; };
+		CDE55C9B22647E7800010446 /* UIButton+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2F42262D22700B46AB4 /* UIButton+Format.swift */; };
+		CDE55C9C22647E7800010446 /* UIAlertController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C31122645D5B00B46AB4 /* UIAlertController+Alerts.swift */; };
+		CDE55C9D22647E7800010446 /* SchedulingProgressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3152264726400B46AB4 /* SchedulingProgressModel.swift */; };
+		CDE55C9E22647E7800010446 /* ClinicianViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C2DE2262BC6F00B46AB4 /* ClinicianViewController.storyboard */; };
+		CDE55C9F22647E7800010446 /* DateTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C2E72262C4F300B46AB4 /* DateTimeViewController.storyboard */; };
+		CDE55CA022647E7800010446 /* YourInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C2E92262C76F00B46AB4 /* YourInfoViewController.storyboard */; };
+		CDE55CA122647E7800010446 /* ContainerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C3042263A13300B46AB4 /* ContainerViewController.storyboard */; };
+		CDE55CA222647E7800010446 /* SchedulingSplitViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB4AB22605D6C00E01CAE /* SchedulingSplitViewController.storyboard */; };
+		CDE55CA322647E9A00010446 /* SchedulingStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB4B422607F9900E01CAE /* SchedulingStepCell.xib */; };
+		CDE55CA422647E9A00010446 /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB49D226057EC00E01CAE /* ServiceCell.xib */; };
+		CDE55CA522647E9A00010446 /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB4A12260581900E01CAE /* LocationCell.xib */; };
+		CDE55CAB22647EA500010446 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2BF2261ABDE00B46AB4 /* DataManagerProtocol.swift */; };
+		CDE55CAC22647EA500010446 /* HybridDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3082263E4BE00B46AB4 /* HybridDataManager.swift */; };
+		CDE55CAD22647EA500010446 /* RemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C12261ABE800B46AB4 /* RemoteDataManager.swift */; };
+		CDE55CAE22647EA500010446 /* StubDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C32261ABF000B46AB4 /* StubDataManager.swift */; };
+		CDE55CAF22647EA500010446 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3062263E4B500B46AB4 /* LocalDataManager.swift */; };
+		CDE55CB022647EAB00010446 /* APIResponseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001CB226027A4009FD15D /* APIResponseProtocols.swift */; };
+		CDE55CB122647EAB00010446 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C52261ABFE00B46AB4 /* Request.swift */; };
+		CDE55CB222647EAB00010446 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2CB2261B21800B46AB4 /* APIRequestProtocol.swift */; };
+		CDE55CB322647EAB00010446 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C72261AC0500B46AB4 /* APIClient.swift */; };
+		CDE55CB422647EAB00010446 /* APIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C92261AC0F00B46AB4 /* APIProtocols.swift */; };
 		CDEEB49322604D7100E01CAE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49222604D7100E01CAE /* LaunchViewController.swift */; };
-		CDEEB49522604E0D00E01CAE /* SchedulingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */; };
-		CDEEB49E226057EC00E01CAE /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49C226057EC00E01CAE /* ServiceCell.swift */; };
-		CDEEB49F226057EC00E01CAE /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB49D226057EC00E01CAE /* ServiceCell.xib */; };
-		CDEEB4A22260581900E01CAE /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4A02260581900E01CAE /* LocationCell.swift */; };
-		CDEEB4A32260581900E01CAE /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB4A12260581900E01CAE /* LocationCell.xib */; };
-		CDEEB4A62260582C00E01CAE /* SchedulingStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4A42260582C00E01CAE /* SchedulingStepCell.swift */; };
-		CDEEB4AA22605AF600E01CAE /* UIColor+SchedulingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4A922605AF600E01CAE /* UIColor+SchedulingWidget.swift */; };
-		CDEEB4AC22605D6C00E01CAE /* SchedulingSplitViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB4AB22605D6C00E01CAE /* SchedulingSplitViewController.storyboard */; };
-		CDEEB4AE2260610300E01CAE /* SchedulingStepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4AD2260610300E01CAE /* SchedulingStepController.swift */; };
-		CDEEB4B0226061A900E01CAE /* TableCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4AF226061A900E01CAE /* TableCellProtocol.swift */; };
-		CDEEB4B622607F9900E01CAE /* SchedulingStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDEEB4B422607F9900E01CAE /* SchedulingStepCell.xib */; };
-		CDEEB4B82260820900E01CAE /* SchedulingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4B72260820900E01CAE /* SchedulingStep.swift */; };
-		CDEEB4BA2260821300E01CAE /* SchedulingStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4B92260821300E01CAE /* SchedulingStepViewModel.swift */; };
-		CDEEB4BD226086A900E01CAE /* Clinician.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB4BC226086A900E01CAE /* Clinician.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +80,42 @@
 			remoteGlobalIDString = CD10019A226021CD009FD15D;
 			remoteInfo = SPScheduling;
 		};
+		CDE55C6822647DD000010446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD100193226021CD009FD15D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE55C5D22647DD000010446;
+			remoteInfo = SchedulingWidget;
+		};
+		CDE55C6A22647DD000010446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD100193226021CD009FD15D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD10019A226021CD009FD15D;
+			remoteInfo = SPScheduling;
+		};
+		CDE55C7122647DD000010446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD100193226021CD009FD15D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE55C5D22647DD000010446;
+			remoteInfo = SchedulingWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDE55C7822647DD000010446 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDE55C7422647DD000010446 /* SchedulingWidget.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CD10019B226021CD009FD15D /* SPScheduling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPScheduling.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +164,12 @@
 		CD99C31122645D5B00B46AB4 /* UIAlertController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Alerts.swift"; sourceTree = "<group>"; };
 		CD99C31322645D8400B46AB4 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		CD99C3152264726400B46AB4 /* SchedulingProgressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingProgressModel.swift; sourceTree = "<group>"; };
+		CDE55C5E22647DD000010446 /* SchedulingWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SchedulingWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE55C6022647DD000010446 /* SchedulingWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchedulingWidget.h; sourceTree = "<group>"; };
+		CDE55C6122647DD000010446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE55C6622647DD000010446 /* SchedulingWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchedulingWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE55C6D22647DD000010446 /* SchedulingWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingWidgetTests.swift; sourceTree = "<group>"; };
+		CDE55C6F22647DD000010446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDEEB49222604D7100E01CAE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingWidget.swift; sourceTree = "<group>"; };
 		CDEEB498226050AF00E01CAE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -147,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE55C7322647DD000010446 /* SchedulingWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,14 +204,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDE55C5B22647DD000010446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE55C6322647DD000010446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE55C6722647DD000010446 /* SchedulingWidget.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CD100192226021CD009FD15D = {
 			isa = PBXGroup;
 			children = (
+				CDE55C5F22647DD000010446 /* SchedulingWidget */,
 				CD10019D226021CD009FD15D /* SPScheduling */,
 				CD1001B2226021CF009FD15D /* SPSchedulingTests */,
+				CDE55C6C22647DD000010446 /* SchedulingWidgetTests */,
 				CD10019C226021CD009FD15D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -174,6 +238,8 @@
 			children = (
 				CD10019B226021CD009FD15D /* SPScheduling.app */,
 				CD1001AF226021CF009FD15D /* SPSchedulingTests.xctest */,
+				CDE55C5E22647DD000010446 /* SchedulingWidget.framework */,
+				CDE55C6622647DD000010446 /* SchedulingWidgetTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,9 +247,9 @@
 		CD10019D226021CD009FD15D /* SPScheduling */ = {
 			isa = PBXGroup;
 			children = (
+				CDE55C7D22647E2700010446 /* Resources */,
+				CDE55C7C22647E1A00010446 /* Source */,
 				CDEEB498226050AF00E01CAE /* Info.plist */,
-				CD1001C5226024AD009FD15D /* Source */,
-				CD1001BE22602317009FD15D /* Resources */,
 			);
 			path = SPScheduling;
 			sourceTree = "<group>";
@@ -203,7 +269,6 @@
 				CD1001A5226021CF009FD15D /* Assets.xcassets */,
 				CD1001C02260232D009FD15D /* Stubs */,
 				CD1001BF22602323009FD15D /* Views */,
-				CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -213,7 +278,6 @@
 			children = (
 				CD99C2FF2262D45700B46AB4 /* Screens */,
 				CD99C2FE2262D3F400B46AB4 /* Cells */,
-				CD1001A2226021CE009FD15D /* Main.storyboard */,
 				CD99C3042263A13300B46AB4 /* ContainerViewController.storyboard */,
 				CDEEB4AB22605D6C00E01CAE /* SchedulingSplitViewController.storyboard */,
 			);
@@ -242,8 +306,6 @@
 				CD99C2F72262D26700B46AB4 /* Locations */,
 				CD99C2F92262D2C100B46AB4 /* Appointment Time */,
 				CD99C2FA2262D2D100B46AB4 /* Your Info */,
-				CD10019E226021CE009FD15D /* AppDelegate.swift */,
-				CDEEB49222604D7100E01CAE /* LaunchViewController.swift */,
 				CD99C2EF2262D09900B46AB4 /* Extensions */,
 				CD99C2BE2261ABC700B46AB4 /* Data Layer */,
 				CD99C3152264726400B46AB4 /* SchedulingProgressModel.swift */,
@@ -385,6 +447,44 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		CDE55C5F22647DD000010446 /* SchedulingWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CD1001C5226024AD009FD15D /* Source */,
+				CD1001BE22602317009FD15D /* Resources */,
+				CDE55C6022647DD000010446 /* SchedulingWidget.h */,
+				CDE55C6122647DD000010446 /* Info.plist */,
+			);
+			path = SchedulingWidget;
+			sourceTree = "<group>";
+		};
+		CDE55C6C22647DD000010446 /* SchedulingWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE55C6D22647DD000010446 /* SchedulingWidgetTests.swift */,
+				CDE55C6F22647DD000010446 /* Info.plist */,
+			);
+			path = SchedulingWidgetTests;
+			sourceTree = "<group>";
+		};
+		CDE55C7C22647E1A00010446 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CD10019E226021CE009FD15D /* AppDelegate.swift */,
+				CDEEB49222604D7100E01CAE /* LaunchViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CDE55C7D22647E2700010446 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */,
+				CD1001A2226021CE009FD15D /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CDEEB4BB2260823F00E01CAE /* Scheduling Step */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +498,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		CDE55C5922647DD000010446 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE55C7022647DD000010446 /* SchedulingWidget.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		CD10019A226021CD009FD15D /* SPScheduling */ = {
 			isa = PBXNativeTarget;
@@ -406,10 +517,12 @@
 				CD100197226021CD009FD15D /* Sources */,
 				CD100198226021CD009FD15D /* Frameworks */,
 				CD100199226021CD009FD15D /* Resources */,
+				CDE55C7822647DD000010446 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CDE55C7222647DD000010446 /* PBXTargetDependency */,
 			);
 			name = SPScheduling;
 			productName = SPScheduling;
@@ -434,6 +547,43 @@
 			productReference = CD1001AF226021CF009FD15D /* SPSchedulingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CDE55C5D22647DD000010446 /* SchedulingWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE55C7522647DD000010446 /* Build configuration list for PBXNativeTarget "SchedulingWidget" */;
+			buildPhases = (
+				CDE55C5922647DD000010446 /* Headers */,
+				CDE55C5A22647DD000010446 /* Sources */,
+				CDE55C5B22647DD000010446 /* Frameworks */,
+				CDE55C5C22647DD000010446 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchedulingWidget;
+			productName = SchedulingWidget;
+			productReference = CDE55C5E22647DD000010446 /* SchedulingWidget.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDE55C6522647DD000010446 /* SchedulingWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE55C7922647DD000010446 /* Build configuration list for PBXNativeTarget "SchedulingWidgetTests" */;
+			buildPhases = (
+				CDE55C6222647DD000010446 /* Sources */,
+				CDE55C6322647DD000010446 /* Frameworks */,
+				CDE55C6422647DD000010446 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE55C6922647DD000010446 /* PBXTargetDependency */,
+				CDE55C6B22647DD000010446 /* PBXTargetDependency */,
+			);
+			name = SchedulingWidgetTests;
+			productName = SchedulingWidgetTests;
+			productReference = CDE55C6622647DD000010446 /* SchedulingWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -448,6 +598,13 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					CD1001AE226021CF009FD15D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CD10019A226021CD009FD15D;
+					};
+					CDE55C5D22647DD000010446 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CDE55C6522647DD000010446 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = CD10019A226021CD009FD15D;
 					};
@@ -468,6 +625,8 @@
 			targets = (
 				CD10019A226021CD009FD15D /* SPScheduling */,
 				CD1001AE226021CF009FD15D /* SPSchedulingTests */,
+				CDE55C5D22647DD000010446 /* SchedulingWidget */,
+				CDE55C6522647DD000010446 /* SchedulingWidgetTests */,
 			);
 		};
 /* End PBXProject section */
@@ -478,22 +637,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1001C422602386009FD15D /* stubGetLocations.json in Resources */,
-				CDEEB4A32260581900E01CAE /* LocationCell.xib in Resources */,
 				CD1001A9226021CF009FD15D /* LaunchScreen.storyboard in Resources */,
-				CD99C2DF2262BC6F00B46AB4 /* ClinicianViewController.storyboard in Resources */,
-				CD99C2E82262C4F300B46AB4 /* DateTimeViewController.storyboard in Resources */,
-				CDEEB4AC22605D6C00E01CAE /* SchedulingSplitViewController.storyboard in Resources */,
 				CD1001A6226021CF009FD15D /* Assets.xcassets in Resources */,
-				CD99C2EA2262C76F00B46AB4 /* YourInfoViewController.storyboard in Resources */,
 				CD1001C22260234B009FD15D /* stubGetServices.json in Resources */,
 				CD1001A4226021CE009FD15D /* Main.storyboard in Resources */,
-				CDEEB4B622607F9900E01CAE /* SchedulingStepCell.xib in Resources */,
-				CD99C3052263A13300B46AB4 /* ContainerViewController.storyboard in Resources */,
-				CDEEB49F226057EC00E01CAE /* ServiceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD1001AD226021CF009FD15D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE55C5C22647DD000010446 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE55CA022647E7800010446 /* YourInfoViewController.storyboard in Resources */,
+				CDE55C9F22647E7800010446 /* DateTimeViewController.storyboard in Resources */,
+				CDE55CA522647E9A00010446 /* LocationCell.xib in Resources */,
+				CDE55C9E22647E7800010446 /* ClinicianViewController.storyboard in Resources */,
+				CDE55CA422647E9A00010446 /* ServiceCell.xib in Resources */,
+				CDE55CA322647E9A00010446 /* SchedulingStepCell.xib in Resources */,
+				CDE55CA222647E7800010446 /* SchedulingSplitViewController.storyboard in Resources */,
+				CDE55CA122647E7800010446 /* ContainerViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE55C6422647DD000010446 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -507,50 +680,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDEEB4BA2260821300E01CAE /* SchedulingStepViewModel.swift in Sources */,
-				CD99C2C02261ABDE00B46AB4 /* DataManagerProtocol.swift in Sources */,
-				CDEEB4B0226061A900E01CAE /* TableCellProtocol.swift in Sources */,
-				CD99C2EC2262CEF500B46AB4 /* SchedulingDataProtocol.swift in Sources */,
-				CD99C2E22262C19F00B46AB4 /* ClinicianViewController.swift in Sources */,
-				CD99C2DD226298A800B46AB4 /* LocationsCollectionViewController.swift in Sources */,
-				CD99C2F52262D22700B46AB4 /* UIButton+Format.swift in Sources */,
-				CD1001CC226027A4009FD15D /* APIResponseProtocols.swift in Sources */,
-				CD99C2C42261ABF000B46AB4 /* StubDataManager.swift in Sources */,
-				CD99C3102263F03F00B46AB4 /* SchedulingViewControllerProtocol.swift in Sources */,
-				CDEEB4B82260820900E01CAE /* SchedulingStep.swift in Sources */,
 				CDEEB49322604D7100E01CAE /* LaunchViewController.swift in Sources */,
-				CD99C3162264726400B46AB4 /* SchedulingProgressModel.swift in Sources */,
-				CD99C2C82261AC0500B46AB4 /* APIClient.swift in Sources */,
-				CDEEB49522604E0D00E01CAE /* SchedulingWidget.swift in Sources */,
-				CD99C30C2263EB8C00B46AB4 /* SchedulingWidgetProtocol.swift in Sources */,
-				CD99C2E62262C1B700B46AB4 /* YourInfoViewController.swift in Sources */,
-				CDEEB4AA22605AF600E01CAE /* UIColor+SchedulingWidget.swift in Sources */,
-				CDEEB4AE2260610300E01CAE /* SchedulingStepController.swift in Sources */,
-				CD99C3072263E4B500B46AB4 /* LocalDataManager.swift in Sources */,
-				CDEEB49E226057EC00E01CAE /* ServiceCell.swift in Sources */,
 				CD10019F226021CE009FD15D /* AppDelegate.swift in Sources */,
-				CD99C2CA2261AC0F00B46AB4 /* APIProtocols.swift in Sources */,
-				CD99C2DB2262985C00B46AB4 /* ServicesCollectionViewController.swift in Sources */,
-				CD99C2FD2262D36A00B46AB4 /* AppointmentTime.swift in Sources */,
-				CD99C2EE2262CF2B00B46AB4 /* ClientInfo.swift in Sources */,
-				CDEEB4A62260582C00E01CAE /* SchedulingStepCell.swift in Sources */,
-				CD1001CA22602594009FD15D /* Location.swift in Sources */,
-				CD99C3092263E4BE00B46AB4 /* HybridDataManager.swift in Sources */,
-				CD99C2F32262D21800B46AB4 /* UICollectionViewCell+Shadow.swift in Sources */,
-				CD99C2CC2261B21800B46AB4 /* APIRequestProtocol.swift in Sources */,
-				CD99C3032262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift in Sources */,
-				CDEEB4BD226086A900E01CAE /* Clinician.swift in Sources */,
-				CD99C3012262D53900B46AB4 /* SchedulingDetailProtocol.swift in Sources */,
-				CD99C2C22261ABE800B46AB4 /* RemoteDataManager.swift in Sources */,
-				CD99C2D32261D68D00B46AB4 /* SchedulingSplitViewContoller.swift in Sources */,
-				CD99C2F12262D0A900B46AB4 /* Int+TimeInterval.swift in Sources */,
-				CD99C2C62261ABFE00B46AB4 /* Request.swift in Sources */,
-				CDEEB4A22260581900E01CAE /* LocationCell.swift in Sources */,
-				CD99C30E2263EBF500B46AB4 /* APIClientProtocol.swift in Sources */,
-				CD99C31222645D5B00B46AB4 /* UIAlertController+Alerts.swift in Sources */,
-				CD1001C8226024E9009FD15D /* Service.swift in Sources */,
-				CD99C2E42262C1AA00B46AB4 /* DateTimeViewController.swift in Sources */,
-				CD99C31422645D8400B46AB4 /* ContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +693,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDE55C5A22647DD000010446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE55C8B22647E7800010446 /* SchedulingStepViewModel.swift in Sources */,
+				CDE55CB122647EAB00010446 /* Request.swift in Sources */,
+				CDE55C8D22647E7800010446 /* ClinicianViewController.swift in Sources */,
+				CDE55C9A22647E7800010446 /* UICollectionViewCell+Shadow.swift in Sources */,
+				CDE55CB022647EAB00010446 /* APIResponseProtocols.swift in Sources */,
+				CDE55C8722647E7800010446 /* SchedulingDetailCollectionProtocol.swift in Sources */,
+				CDE55C9D22647E7800010446 /* SchedulingProgressModel.swift in Sources */,
+				CDE55CAD22647EA500010446 /* RemoteDataManager.swift in Sources */,
+				CDE55C8F22647E7800010446 /* ServiceCell.swift in Sources */,
+				CDE55C8522647E7800010446 /* SchedulingViewControllerProtocol.swift in Sources */,
+				CDE55C7F22647E7800010446 /* SchedulingSplitViewContoller.swift in Sources */,
+				CDE55C8322647E7800010446 /* SchedulingWidgetProtocol.swift in Sources */,
+				CDE55C8622647E7800010446 /* SchedulingDetailProtocol.swift in Sources */,
+				CDE55C8A22647E7800010446 /* SchedulingStepCell.swift in Sources */,
+				CDE55C9722647E7800010446 /* YourInfoViewController.swift in Sources */,
+				CDE55C9422647E7800010446 /* AppointmentTime.swift in Sources */,
+				CDE55CB222647EAB00010446 /* APIRequestProtocol.swift in Sources */,
+				CDE55C9B22647E7800010446 /* UIButton+Format.swift in Sources */,
+				CDE55CAB22647EA500010446 /* DataManagerProtocol.swift in Sources */,
+				CDE55CAF22647EA500010446 /* LocalDataManager.swift in Sources */,
+				CDE55C9922647E7800010446 /* Int+TimeInterval.swift in Sources */,
+				CDE55C8122647E7800010446 /* SchedulingDataProtocol.swift in Sources */,
+				CDE55CAC22647EA500010446 /* HybridDataManager.swift in Sources */,
+				CDE55C9022647E7800010446 /* Service.swift in Sources */,
+				CDE55C9C22647E7800010446 /* UIAlertController+Alerts.swift in Sources */,
+				CDE55C8E22647E7800010446 /* ServicesCollectionViewController.swift in Sources */,
+				CDE55C9622647E7800010446 /* ClientInfo.swift in Sources */,
+				CDE55C9322647E7800010446 /* Location.swift in Sources */,
+				CDE55C8222647E7800010446 /* TableCellProtocol.swift in Sources */,
+				CDE55C9122647E7800010446 /* LocationsCollectionViewController.swift in Sources */,
+				CDE55C8022647E7800010446 /* ContainerViewController.swift in Sources */,
+				CDE55CAE22647EA500010446 /* StubDataManager.swift in Sources */,
+				CDE55C8822647E7800010446 /* SchedulingStep.swift in Sources */,
+				CDE55C8422647E7800010446 /* APIClientProtocol.swift in Sources */,
+				CDE55C9522647E7800010446 /* DateTimeViewController.swift in Sources */,
+				CDE55C8C22647E7800010446 /* Clinician.swift in Sources */,
+				CDE55CB422647EAB00010446 /* APIProtocols.swift in Sources */,
+				CDE55C9822647E7800010446 /* UIColor+SchedulingWidget.swift in Sources */,
+				CDE55C9222647E7800010446 /* LocationCell.swift in Sources */,
+				CDE55C7E22647E7800010446 /* SchedulingWidget.swift in Sources */,
+				CDE55C8922647E7800010446 /* SchedulingStepController.swift in Sources */,
+				CDE55CB322647EAB00010446 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE55C6222647DD000010446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE55C6E22647DD000010446 /* SchedulingWidgetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -569,6 +757,21 @@
 			isa = PBXTargetDependency;
 			target = CD10019A226021CD009FD15D /* SPScheduling */;
 			targetProxy = CD1001B0226021CF009FD15D /* PBXContainerItemProxy */;
+		};
+		CDE55C6922647DD000010446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE55C5D22647DD000010446 /* SchedulingWidget */;
+			targetProxy = CDE55C6822647DD000010446 /* PBXContainerItemProxy */;
+		};
+		CDE55C6B22647DD000010446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD10019A226021CD009FD15D /* SPScheduling */;
+			targetProxy = CDE55C6A22647DD000010446 /* PBXContainerItemProxy */;
+		};
+		CDE55C7222647DD000010446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE55C5D22647DD000010446 /* SchedulingWidget */;
+			targetProxy = CDE55C7122647DD000010446 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -711,6 +914,7 @@
 		CD1001B9226021CF009FD15D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -730,6 +934,7 @@
 		CD1001BA226021CF009FD15D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -788,6 +993,102 @@
 			};
 			name = Release;
 		};
+		CDE55C7622647DD000010446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SchedulingWidget/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cspan.SchedulingWidget;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDE55C7722647DD000010446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SchedulingWidget/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cspan.SchedulingWidget;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDE55C7A22647DD000010446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DTZJF4FB5;
+				INFOPLIST_FILE = SchedulingWidgetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cspan.SchedulingWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPScheduling.app/SPScheduling";
+			};
+			name = Debug;
+		};
+		CDE55C7B22647DD000010446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DTZJF4FB5;
+				INFOPLIST_FILE = SchedulingWidgetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cspan.SchedulingWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPScheduling.app/SPScheduling";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -814,6 +1115,24 @@
 			buildConfigurations = (
 				CD1001BC226021CF009FD15D /* Debug */,
 				CD1001BD226021CF009FD15D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE55C7522647DD000010446 /* Build configuration list for PBXNativeTarget "SchedulingWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE55C7622647DD000010446 /* Debug */,
+				CDE55C7722647DD000010446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE55C7922647DD000010446 /* Build configuration list for PBXNativeTarget "SchedulingWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE55C7A22647DD000010446 /* Debug */,
+				CDE55C7B22647DD000010446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
