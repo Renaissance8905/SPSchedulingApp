@@ -27,7 +27,7 @@ class SchedulingWidget: SchedulingWidgetProtocol {
     }
     
     private var appointmentReturnBlock: AppointmentReturn = nil
-    private weak var widgetView: (UIViewController & Container)? // TODO clean up this guy's logic
+    private weak var widgetView: Container? // TODO try to get rid of this reference
     
     private let dataManager: DataManager
     private let progress: SchedulingProgressModel
@@ -62,7 +62,7 @@ class SchedulingWidget: SchedulingWidgetProtocol {
     func submitAppointment() {
         guard let appt = progress.appointment else { return }
         appointmentReturnBlock?(appt)
-        widgetView?.dismiss(animated: true)
+        widgetView?.dismissWidget()
         
     }
     

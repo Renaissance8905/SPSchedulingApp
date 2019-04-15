@@ -8,9 +8,10 @@
 
 import UIKit
 
-protocol Container {
+protocol Container: class {
     func setTitle(_: String?)
     func requestConfirmation(_ confirmation: @escaping (Bool) -> Void)
+    func dismissWidget()
 }
 
 class ContainerViewController: UIViewController, SchedulingViewController {
@@ -25,7 +26,7 @@ class ContainerViewController: UIViewController, SchedulingViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButton()
-        setTitle(widget?.title)
+        setTitle(nil)
         
     }
     
@@ -36,7 +37,7 @@ class ContainerViewController: UIViewController, SchedulingViewController {
     }
     
     private func embedSplitView() {
-        guard let widget = widget else { return cancel() }
+        guard let widget = widget else { return dismissWidget() }
         let splitViewController = SchedulingSplitViewController.viewController(with: widget)
         addChild(splitViewController)
         containerView?.addSubview(splitViewController.view)
@@ -46,13 +47,7 @@ class ContainerViewController: UIViewController, SchedulingViewController {
     
     private func configureButton() {
         closeBtn?.formatAsSelectButton("Cancel")
-        closeBtn?.addTarget(self, action: #selector(cancel), for: .touchUpInside)
-    }
-    
-    @objc func cancel() {
-        widget = nil
-        dismiss(animated: true)
-        
+        closeBtn?.addTarget(self, action: #selector(dismissWidget), for: .touchUpInside)
     }
     
 }
@@ -67,6 +62,11 @@ extension ContainerViewController: Container {
     func requestConfirmation(_ confirmation: @escaping (Bool) -> Void) {
         let alert = UIAlertController.appointmentConfirmation(confirmation)
         present(alert, animated: true)
+        
+    }
+    
+    @objc func dismissWidget() {
+        dismiss(animated: true)
         
     }
     

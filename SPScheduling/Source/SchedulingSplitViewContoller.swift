@@ -25,17 +25,22 @@ class SchedulingSplitViewController: UISplitViewController, SchedulingViewContro
     override func viewDidLoad() {
         super.viewDidLoad()
         stepController?.widget = widget
+        setContainerTitle()
         showDetailViewController()
         splitViewController?.preferredDisplayMode = .allVisible
     }
     
     func didUpdateStep() {
         stepController?.update()
-        (parent as? Container)?.setTitle(widget?.title)
+        setContainerTitle()
     }
     
     func updateDetail() {
         showDetailViewController()
+    }
+    
+    func setContainerTitle() {
+        (parent as? Container)?.setTitle(widget?.title)
     }
     
     func showDetailViewController() {
