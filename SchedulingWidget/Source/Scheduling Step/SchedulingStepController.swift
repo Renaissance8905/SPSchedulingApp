@@ -57,6 +57,7 @@ extension SchedulingStepController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         widget?.rollBackActiveStep(to: indexPath)
         listener?.didUpdateStep()
+        listener?.updateDetail()
         
     }
 }
