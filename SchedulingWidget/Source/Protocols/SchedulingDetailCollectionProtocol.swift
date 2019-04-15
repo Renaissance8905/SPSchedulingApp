@@ -51,13 +51,6 @@ extension SchedulingCollectionViewController where Self: UIViewController {
         (cell as? CellType)?.configure()
     }
     
-    func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        coordinator.animate(alongsideTransition: nil) { (_) in
-            self.collectionView?.invalidateIntrinsicContentSize()
-            self.collectionView?.layoutIfNeeded()
-        }
-    }
-    
 }
 
 
