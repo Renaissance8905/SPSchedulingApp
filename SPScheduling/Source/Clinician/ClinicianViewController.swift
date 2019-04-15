@@ -50,8 +50,8 @@ class ClinicianViewController:  UIViewController, SchedulingDetailViewController
     
     @objc func selectClinician() {
         guard let url = inputURL, let id = inputID, let name = inputName else { return }
-        let clinician = Clinician(id: id, url: url, name: name)
-        widget?.clinician = clinician
+        let clinician = Clinician(id: id, url: url, name: name, practiceName: "House of Wellness")
+        widget?.set(clinician)
         updateAndNotify()
     }
     

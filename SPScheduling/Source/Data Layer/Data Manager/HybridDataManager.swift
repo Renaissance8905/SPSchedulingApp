@@ -8,6 +8,19 @@
 
 import Foundation
 
+//
+// In most cases, this is the Data Manager that will actually be used
+// It fetches/stores no data directly, but rather curates interaction
+// between local and remote Data Managers.
+//
+// The general pattern for this is:
+//
+//  1)  Check the local manager for non-stale data
+//  2a) If present, return local data
+//  2b) Else if needed, ask the remote manager for fresh data
+//  3)  Give the results to the local manager for storage
+//  4)  Return results to the consumer
+//
 class HybridDataManager: DataManager {
     
     private let remote: DataManager

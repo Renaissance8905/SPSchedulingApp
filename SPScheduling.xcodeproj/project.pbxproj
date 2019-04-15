@@ -41,9 +41,15 @@
 		CD99C2FD2262D36A00B46AB4 /* AppointmentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2FC2262D36A00B46AB4 /* AppointmentTime.swift */; };
 		CD99C3012262D53900B46AB4 /* SchedulingDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3002262D53900B46AB4 /* SchedulingDetailProtocol.swift */; };
 		CD99C3032262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3022262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift */; };
-		CD99C3052263A13300B46AB4 /* Container.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C3042263A13300B46AB4 /* Container.storyboard */; };
+		CD99C3052263A13300B46AB4 /* ContainerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD99C3042263A13300B46AB4 /* ContainerViewController.storyboard */; };
 		CD99C3072263E4B500B46AB4 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3062263E4B500B46AB4 /* LocalDataManager.swift */; };
 		CD99C3092263E4BE00B46AB4 /* HybridDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3082263E4BE00B46AB4 /* HybridDataManager.swift */; };
+		CD99C30C2263EB8C00B46AB4 /* SchedulingWidgetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C30B2263EB8C00B46AB4 /* SchedulingWidgetProtocol.swift */; };
+		CD99C30E2263EBF500B46AB4 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C30D2263EBF500B46AB4 /* APIClientProtocol.swift */; };
+		CD99C3102263F03F00B46AB4 /* SchedulingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C30F2263F03F00B46AB4 /* SchedulingViewControllerProtocol.swift */; };
+		CD99C31222645D5B00B46AB4 /* UIAlertController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C31122645D5B00B46AB4 /* UIAlertController+Alerts.swift */; };
+		CD99C31422645D8400B46AB4 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C31322645D8400B46AB4 /* ContainerViewController.swift */; };
+		CD99C3162264726400B46AB4 /* SchedulingProgressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C3152264726400B46AB4 /* SchedulingProgressModel.swift */; };
 		CDEEB49322604D7100E01CAE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49222604D7100E01CAE /* LaunchViewController.swift */; };
 		CDEEB49522604E0D00E01CAE /* SchedulingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */; };
 		CDEEB49E226057EC00E01CAE /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49C226057EC00E01CAE /* ServiceCell.swift */; };
@@ -109,9 +115,15 @@
 		CD99C2FC2262D36A00B46AB4 /* AppointmentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTime.swift; sourceTree = "<group>"; };
 		CD99C3002262D53900B46AB4 /* SchedulingDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingDetailProtocol.swift; sourceTree = "<group>"; };
 		CD99C3022262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingDetailCollectionProtocol.swift; sourceTree = "<group>"; };
-		CD99C3042263A13300B46AB4 /* Container.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Container.storyboard; sourceTree = "<group>"; };
+		CD99C3042263A13300B46AB4 /* ContainerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContainerViewController.storyboard; sourceTree = "<group>"; };
 		CD99C3062263E4B500B46AB4 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
 		CD99C3082263E4BE00B46AB4 /* HybridDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridDataManager.swift; sourceTree = "<group>"; };
+		CD99C30B2263EB8C00B46AB4 /* SchedulingWidgetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingWidgetProtocol.swift; sourceTree = "<group>"; };
+		CD99C30D2263EBF500B46AB4 /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		CD99C30F2263F03F00B46AB4 /* SchedulingViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingViewControllerProtocol.swift; sourceTree = "<group>"; };
+		CD99C31122645D5B00B46AB4 /* UIAlertController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Alerts.swift"; sourceTree = "<group>"; };
+		CD99C31322645D8400B46AB4 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		CD99C3152264726400B46AB4 /* SchedulingProgressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingProgressModel.swift; sourceTree = "<group>"; };
 		CDEEB49222604D7100E01CAE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingWidget.swift; sourceTree = "<group>"; };
 		CDEEB498226050AF00E01CAE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -203,7 +215,7 @@
 				CD99C2FF2262D45700B46AB4 /* Screens */,
 				CD99C2FE2262D3F400B46AB4 /* Cells */,
 				CD1001A2226021CE009FD15D /* Main.storyboard */,
-				CD99C3042263A13300B46AB4 /* Container.storyboard */,
+				CD99C3042263A13300B46AB4 /* ContainerViewController.storyboard */,
 				CDEEB4AB22605D6C00E01CAE /* SchedulingSplitViewController.storyboard */,
 			);
 			path = Views;
@@ -222,8 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */,
-				CD99C2EB2262CEF500B46AB4 /* SchedulingDataProtocol.swift */,
-				CDEEB4AF226061A900E01CAE /* TableCellProtocol.swift */,
+				CD99C31322645D8400B46AB4 /* ContainerViewController.swift */,
+				CD99C30A2263EB7100B46AB4 /* Protocols */,
 				CDEEB4BB2260823F00E01CAE /* Scheduling Step */,
 				CD99C2F82262D2BB00B46AB4 /* Clinician */,
 				CD99C2F62262D25A00B46AB4 /* Services */,
@@ -234,8 +246,7 @@
 				CDEEB49222604D7100E01CAE /* LaunchViewController.swift */,
 				CD99C2EF2262D09900B46AB4 /* Extensions */,
 				CD99C2BE2261ABC700B46AB4 /* Data Layer */,
-				CD99C3002262D53900B46AB4 /* SchedulingDetailProtocol.swift */,
-				CD99C3022262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift */,
+				CD99C3152264726400B46AB4 /* SchedulingProgressModel.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -288,6 +299,7 @@
 				CD99C2F02262D0A900B46AB4 /* Int+TimeInterval.swift */,
 				CD99C2F22262D21800B46AB4 /* UICollectionViewCell+Shadow.swift */,
 				CD99C2F42262D22700B46AB4 /* UIButton+Format.swift */,
+				CD99C31122645D5B00B46AB4 /* UIAlertController+Alerts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -357,6 +369,20 @@
 				CD99C2E92262C76F00B46AB4 /* YourInfoViewController.storyboard */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		CD99C30A2263EB7100B46AB4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CD99C2EB2262CEF500B46AB4 /* SchedulingDataProtocol.swift */,
+				CDEEB4AF226061A900E01CAE /* TableCellProtocol.swift */,
+				CD99C30B2263EB8C00B46AB4 /* SchedulingWidgetProtocol.swift */,
+				CD99C30D2263EBF500B46AB4 /* APIClientProtocol.swift */,
+				CD99C30F2263F03F00B46AB4 /* SchedulingViewControllerProtocol.swift */,
+				CD99C3002262D53900B46AB4 /* SchedulingDetailProtocol.swift */,
+				CD99C3022262D56100B46AB4 /* SchedulingDetailCollectionProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		CDEEB4BB2260823F00E01CAE /* Scheduling Step */ = {
@@ -462,7 +488,7 @@
 				CD1001C22260234B009FD15D /* stubGetServices.json in Resources */,
 				CD1001A4226021CE009FD15D /* Main.storyboard in Resources */,
 				CDEEB4B622607F9900E01CAE /* SchedulingStepCell.xib in Resources */,
-				CD99C3052263A13300B46AB4 /* Container.storyboard in Resources */,
+				CD99C3052263A13300B46AB4 /* ContainerViewController.storyboard in Resources */,
 				CDEEB49F226057EC00E01CAE /* ServiceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,10 +516,13 @@
 				CD99C2F52262D22700B46AB4 /* UIButton+Format.swift in Sources */,
 				CD1001CC226027A4009FD15D /* APIResponseProtocols.swift in Sources */,
 				CD99C2C42261ABF000B46AB4 /* StubDataManager.swift in Sources */,
+				CD99C3102263F03F00B46AB4 /* SchedulingViewControllerProtocol.swift in Sources */,
 				CDEEB4B82260820900E01CAE /* SchedulingStep.swift in Sources */,
 				CDEEB49322604D7100E01CAE /* LaunchViewController.swift in Sources */,
+				CD99C3162264726400B46AB4 /* SchedulingProgressModel.swift in Sources */,
 				CD99C2C82261AC0500B46AB4 /* APIClient.swift in Sources */,
 				CDEEB49522604E0D00E01CAE /* SchedulingWidget.swift in Sources */,
+				CD99C30C2263EB8C00B46AB4 /* SchedulingWidgetProtocol.swift in Sources */,
 				CD99C2E62262C1B700B46AB4 /* YourInfoViewController.swift in Sources */,
 				CDEEB4AA22605AF600E01CAE /* UIColor+SchedulingWidget.swift in Sources */,
 				CDEEB4AE2260610300E01CAE /* SchedulingStepController.swift in Sources */,
@@ -517,8 +546,11 @@
 				CD99C2F12262D0A900B46AB4 /* Int+TimeInterval.swift in Sources */,
 				CD99C2C62261ABFE00B46AB4 /* Request.swift in Sources */,
 				CDEEB4A22260581900E01CAE /* LocationCell.swift in Sources */,
+				CD99C30E2263EBF500B46AB4 /* APIClientProtocol.swift in Sources */,
+				CD99C31222645D5B00B46AB4 /* UIAlertController+Alerts.swift in Sources */,
 				CD1001C8226024E9009FD15D /* Service.swift in Sources */,
 				CD99C2E42262C1AA00B46AB4 /* DateTimeViewController.swift in Sources */,
+				CD99C31422645D8400B46AB4 /* ContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

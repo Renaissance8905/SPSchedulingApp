@@ -8,12 +8,12 @@
 
 import Foundation
 
-class APIClient {
+class SchedulingAPIClient: APIClient {
     
     let session = URLSession.shared
     let decoder = JSONDecoder()
     
-    func sendRequest<T: Codable>(_ request: Request, completion: @escaping ResultCompletion<T>) {
+    func sendRequest<T: Codable>(_ request: APIRequest, completion: @escaping ResultCompletion<T>) {
         
         do {
             

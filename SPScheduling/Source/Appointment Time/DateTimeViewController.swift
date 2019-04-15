@@ -16,8 +16,7 @@ class DateTimeViewController: UIViewController, SchedulingDetailViewController {
     @IBOutlet var selectBtn: UIButton?
     
     private func configureButton() {
-        selectBtn?.formatAsSelectButton()
-        selectBtn?.setTitle("Sounds groovy", for: .normal)
+        selectBtn?.formatAsSelectButton("Sounds groovy")
         selectBtn?.addTarget(self, action: #selector(selectClinician), for: .touchUpInside)
     }
     
@@ -27,7 +26,7 @@ class DateTimeViewController: UIViewController, SchedulingDetailViewController {
     }
     
     @objc func selectClinician() {
-        widget?.apptTime = AppointmentTime(date: Date() + 1.days)
+        widget?.set(AppointmentTime(date: Date() + 1.days))
         updateAndNotify()
     }
     

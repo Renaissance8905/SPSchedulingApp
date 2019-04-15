@@ -59,7 +59,7 @@ class YourInfoViewController: UIViewController, SchedulingDetailViewController {
     @objc func selectClientInfo() {
         guard let name = inputName, let age = inputAge, let cats = inputCats else { return }
         
-        widget?.yourInfo = ClientInfo(name: name, age: age, catCount: cats)
+        widget?.set(ClientInfo(name: name, age: age, catCount: cats))
         
         updateAndNotify()
     }

@@ -8,6 +8,8 @@
 
 import Foundation
 
+// Stub Model to simulate data outside the scope of this widget
+
 struct ClientInfo: SchedulingData {
     var name: String
     var age: Int

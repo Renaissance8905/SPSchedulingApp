@@ -26,7 +26,7 @@ class ServicesCollectionViewController: UIViewController, SchedulingCollectionVi
         super.viewDidLoad()
         updateData()
         selectionBlock = { [weak self] service in
-            self?.widget?.service = service
+            self?.widget?.set(service)
             self?.updateAndNotify()
         }
     }

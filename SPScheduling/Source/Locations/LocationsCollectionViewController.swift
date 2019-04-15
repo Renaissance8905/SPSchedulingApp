@@ -15,7 +15,7 @@ class LocationsCollectionViewController: UIViewController, SchedulingCollectionV
     
     var collectionView: UICollectionView?
     
-    var widget: SchedulingWidget?
+    weak var widget: SchedulingWidget?
     var data: [Location] = [] {
         didSet { collectionView?.reloadData() }
     }
@@ -26,7 +26,7 @@ class LocationsCollectionViewController: UIViewController, SchedulingCollectionV
         super.viewDidLoad()
         updateData()
         selectionBlock = { [weak self] location in
-            self?.widget?.location = location
+            self?.widget?.set(location)
             self?.updateAndNotify()
         }
     }

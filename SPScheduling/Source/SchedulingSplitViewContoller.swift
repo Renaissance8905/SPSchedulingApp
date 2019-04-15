@@ -11,19 +11,12 @@ import UIKit
 
 protocol StepUpdateListener {
     func didUpdateStep()
+    func updateDetail()
 }
 
-class SchedulingSplitViewController: UISplitViewController, StepUpdateListener {
+class SchedulingSplitViewController: UISplitViewController, SchedulingViewController, StepUpdateListener {
     
     weak var widget: SchedulingWidget?
-    
-    class func viewController(with widget: SchedulingWidget?) -> SchedulingSplitViewController {
-        let storyboard = UIStoryboard(name: String(describing: self), bundle: Bundle(for: self))
-        let controller = storyboard.instantiateInitialViewController() as? SchedulingSplitViewController
-        controller?.widget = widget
-        return controller ?? SchedulingSplitViewController()
-        
-    }
     
     var stepController: SchedulingStepController? {
         return (viewControllers.first as? UINavigationController)?.topViewController as? SchedulingStepController
@@ -38,6 +31,10 @@ class SchedulingSplitViewController: UISplitViewController, StepUpdateListener {
     
     func didUpdateStep() {
         stepController?.update()
+        (parent as? Container)?.setTitle(widget?.title)
+    }
+    
+    func updateDetail() {
         showDetailViewController()
     }
     

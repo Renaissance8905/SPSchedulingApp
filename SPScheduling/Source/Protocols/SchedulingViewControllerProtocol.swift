@@ -1,23 +1,18 @@
 //
-//  SchedulingDetailViewControllerProtocol.swift
+//  SchedulingViewControllerProtocol.swift
 //  SPScheduling
 //
-//  Created by Christopher Spradling on 4/13/19.
+//  Created by Christopher Spradling on 4/14/19.
 //  Copyright © 2019 cspantech. All rights reserved.
 //
 
 import UIKit
 
-protocol SchedulingDetailViewController {
+protocol SchedulingViewController where Self: UIViewController {
     var widget: SchedulingWidget? { get set }
 }
 
-extension SchedulingDetailViewController where Self: UIViewController {
-    
-    func updateAndNotify() {
-        widget?.incrementActiveStep()
-        (splitViewController as? StepUpdateListener)?.didUpdateStep()
-    }
+extension SchedulingViewController {
     
     static func viewController(with widget: SchedulingWidget) -> Self {
         let storyboard = UIStoryboard(name: String(describing: self), bundle: Bundle(for: self))

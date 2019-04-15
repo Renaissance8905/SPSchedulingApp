@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum HTTPMethod: String {
+public enum HTTPMethod: String {
     case GET, POST, PUT, DELETE
 }
 
-protocol APIRequest {
+public protocol APIRequest {
     
     var baseURLString: String           { get }
     var endpoint: String                { get }
@@ -22,7 +22,7 @@ protocol APIRequest {
     
 }
 
-extension APIRequest {
+public extension APIRequest {
     
     var genericParameters: [String: String] {
         return ["Accept": "application/vnd.api+json"]

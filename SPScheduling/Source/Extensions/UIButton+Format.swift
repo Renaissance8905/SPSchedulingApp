@@ -10,9 +10,9 @@ import UIKit
 
 extension UIButton {
     
-    func formatAsSelectButton() {
+    func formatAsSelectButton(_ title: String = "Select") {
         
-        setTitle("Select", for: .normal)
+        setTitle(title, for: .normal)
         setTitleColor(.white, for: .normal)
         backgroundColor = .primaryBlue
         layer.cornerRadius = 6
@@ -20,3 +20,4 @@ extension UIButton {
         
     }
 }
+

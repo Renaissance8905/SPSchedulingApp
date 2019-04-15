@@ -8,20 +8,20 @@
 
 import Foundation
 
-typealias ResultCompletion<T> = (Result<T>) -> Void
+public typealias ResultCompletion<T> = (Result<T>) -> Void
 
-enum Result<T> {
+public enum Result<T> {
     case success(T)
     case requestFailure(APIClientError?)
     case responseFailure(ResponseError?)
 }
 
-enum APIClientError: Error {
+public enum APIClientError: Error {
     case missingInputData
     case badURL
 }
 
-enum ResponseError: Error {
+public enum ResponseError: Error {
     case parsingError(DecodingError?)
     case apiError(Error)
     case noData

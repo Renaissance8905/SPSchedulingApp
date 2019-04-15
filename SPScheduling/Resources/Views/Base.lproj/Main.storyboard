@@ -19,67 +19,136 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Client portal base URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t8n-cC-LmZ">
-                                <rect key="frame" x="37.5" y="205" width="300" height="30"/>
+                                <rect key="frame" x="37.5" y="214" width="300" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clinician ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ozH-dL-zHJ">
-                                <rect key="frame" x="37.5" y="295" width="300" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clinician Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ozH-dL-zHJ">
+                                <rect key="frame" x="37.5" y="274" width="300" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scheduling Widget App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v81-wC-pu3">
-                                <rect key="frame" x="97.5" y="84" width="180.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scheduling Widget Demo App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v81-wC-pu3">
+                                <rect key="frame" x="56.5" y="50" width="262" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clinician Name (recommended)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAu-Hy-G1C">
+                                <rect key="frame" x="37.5" y="255" width="252.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client portal base URL (required)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkU-zM-8c4">
+                                <rect key="frame" x="37.5" y="195" width="252.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clinician ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzV-Ov-IQU">
+                                <rect key="frame" x="37.5" y="154" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clinician (required)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrM-05-5z6">
+                                <rect key="frame" x="37.5" y="135" width="252.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This widget can be launched in one of two states. It can either accept a Clinician as input:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4m-B3-3YP">
+                                <rect key="frame" x="37.5" y="90" width="300" height="29"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60k-bc-6Hj">
+                                <rect key="frame" x="37.5" y="456" width="300" height="57.5"/>
+                                <string key="text">Or, it can be launched without input and the user can select their clinician inside the widget (this is, of course, dependent on final apps requirements regarding clinician search &amp; selection):</string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58j-5K-xSB">
+                                <rect key="frame" x="37.5" y="543.5" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mnr-5z-etS"/>
+                                </constraints>
+                                <state key="normal" title="Cold Launch"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Practice Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bZ-JG-Lcd">
+                                <rect key="frame" x="37.5" y="334" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Clinician's Practice (recommended)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gau-7n-85K">
+                                <rect key="frame" x="37.5" y="315" width="252.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2K-P3-D5m">
-                                <rect key="frame" x="37.5" y="385" width="300" height="50"/>
+                                <rect key="frame" x="37.5" y="376" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="e5u-Gk-S9s"/>
                                 </constraints>
-                                <state key="normal" title="Launch"/>
+                                <state key="normal" title="Launch With Clinician"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clinician ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAu-Hy-G1C">
-                                <rect key="frame" x="37.5" y="276" width="63.5" height="15"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client portal base URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkU-zM-8c4">
-                                <rect key="frame" x="37.5" y="186" width="127" height="15"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="V4m-B3-3YP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1MF-ka-Khr"/>
+                            <constraint firstItem="5bZ-JG-Lcd" firstAttribute="width" secondItem="t8n-cC-LmZ" secondAttribute="width" id="3kx-mV-Srs"/>
                             <constraint firstItem="v81-wC-pu3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5c4-Ns-0Aw"/>
+                            <constraint firstItem="t8n-cC-LmZ" firstAttribute="width" secondItem="V4m-B3-3YP" secondAttribute="width" id="5d4-ud-MfC"/>
                             <constraint firstItem="ozH-dL-zHJ" firstAttribute="width" secondItem="t8n-cC-LmZ" secondAttribute="width" id="62k-B5-qMa"/>
-                            <constraint firstItem="t8n-cC-LmZ" firstAttribute="top" secondItem="v81-wC-pu3" secondAttribute="bottom" constant="100" id="8Hr-rb-bJq"/>
+                            <constraint firstItem="V4m-B3-3YP" firstAttribute="top" secondItem="v81-wC-pu3" secondAttribute="bottom" constant="16" id="8LC-SN-r1l"/>
                             <constraint firstItem="Z2K-P3-D5m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AgR-yN-t7E"/>
+                            <constraint firstItem="t8n-cC-LmZ" firstAttribute="top" secondItem="uzV-Ov-IQU" secondAttribute="bottom" constant="30" id="DEn-ya-oEU"/>
+                            <constraint firstItem="gau-7n-85K" firstAttribute="trailing" secondItem="XrM-05-5z6" secondAttribute="trailing" id="Kue-rb-LUl"/>
                             <constraint firstItem="ozH-dL-zHJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="L49-bc-gJg"/>
                             <constraint firstItem="ozH-dL-zHJ" firstAttribute="leading" secondItem="uAu-Hy-G1C" secondAttribute="leading" id="N01-Mn-bzn"/>
+                            <constraint firstItem="uzV-Ov-IQU" firstAttribute="top" secondItem="XrM-05-5z6" secondAttribute="bottom" constant="4" id="O8y-Ml-K9l"/>
                             <constraint firstItem="ozH-dL-zHJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9G-sC-Sp7"/>
                             <constraint firstItem="t8n-cC-LmZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ROg-bJ-LhE"/>
-                            <constraint firstItem="v81-wC-pu3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="Sql-YD-Klg"/>
+                            <constraint firstItem="60k-bc-6Hj" firstAttribute="top" secondItem="Z2K-P3-D5m" secondAttribute="bottom" constant="30" id="ROm-TM-D7B"/>
+                            <constraint firstItem="XrM-05-5z6" firstAttribute="top" secondItem="V4m-B3-3YP" secondAttribute="bottom" constant="16" id="SOm-3d-mmq"/>
+                            <constraint firstItem="v81-wC-pu3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Sql-YD-Klg"/>
+                            <constraint firstItem="60k-bc-6Hj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TfB-bt-Nkh"/>
+                            <constraint firstItem="t8n-cC-LmZ" firstAttribute="width" secondItem="uzV-Ov-IQU" secondAttribute="width" id="Wvp-KG-tDG"/>
+                            <constraint firstItem="Z2K-P3-D5m" firstAttribute="top" secondItem="5bZ-JG-Lcd" secondAttribute="bottom" constant="12" id="XXI-RB-Vz1"/>
+                            <constraint firstItem="58j-5K-xSB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xmu-1m-WSA"/>
                             <constraint firstItem="ozH-dL-zHJ" firstAttribute="top" secondItem="uAu-Hy-G1C" secondAttribute="bottom" constant="4" id="Z2R-Rh-SqB"/>
-                            <constraint firstItem="ozH-dL-zHJ" firstAttribute="top" secondItem="t8n-cC-LmZ" secondAttribute="bottom" constant="60" id="gWL-vR-yto"/>
+                            <constraint firstItem="60k-bc-6Hj" firstAttribute="width" secondItem="V4m-B3-3YP" secondAttribute="width" id="aBv-0d-j0O"/>
+                            <constraint firstItem="uzV-Ov-IQU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b0U-kx-XCt"/>
+                            <constraint firstItem="5bZ-JG-Lcd" firstAttribute="top" secondItem="gau-7n-85K" secondAttribute="bottom" constant="4" id="bvG-4q-fQZ"/>
+                            <constraint firstItem="5bZ-JG-Lcd" firstAttribute="leading" secondItem="gau-7n-85K" secondAttribute="leading" id="dS4-MD-Qwt"/>
+                            <constraint firstItem="uAu-Hy-G1C" firstAttribute="trailing" secondItem="XrM-05-5z6" secondAttribute="trailing" id="fAB-Wx-K5I"/>
+                            <constraint firstItem="bkU-zM-8c4" firstAttribute="trailing" secondItem="XrM-05-5z6" secondAttribute="trailing" id="fCf-bg-2jC"/>
+                            <constraint firstItem="ozH-dL-zHJ" firstAttribute="top" secondItem="t8n-cC-LmZ" secondAttribute="bottom" constant="30" id="gWL-vR-yto"/>
+                            <constraint firstItem="58j-5K-xSB" firstAttribute="width" secondItem="60k-bc-6Hj" secondAttribute="width" id="gpK-1S-IQ8"/>
+                            <constraint firstItem="58j-5K-xSB" firstAttribute="top" secondItem="60k-bc-6Hj" secondAttribute="bottom" constant="30" id="lKv-jf-QXZ"/>
+                            <constraint firstItem="5bZ-JG-Lcd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m77-Ic-dPh"/>
+                            <constraint firstItem="uzV-Ov-IQU" firstAttribute="leading" secondItem="XrM-05-5z6" secondAttribute="leading" id="nAx-nd-P2T"/>
                             <constraint firstItem="t8n-cC-LmZ" firstAttribute="leading" secondItem="bkU-zM-8c4" secondAttribute="leading" id="rBf-3H-9dt"/>
                             <constraint firstItem="t8n-cC-LmZ" firstAttribute="top" secondItem="bkU-zM-8c4" secondAttribute="bottom" constant="4" id="twq-IV-Lvi"/>
                             <constraint firstItem="Z2K-P3-D5m" firstAttribute="width" secondItem="ozH-dL-zHJ" secondAttribute="width" id="urq-kG-JiH"/>
-                            <constraint firstItem="Z2K-P3-D5m" firstAttribute="top" secondItem="ozH-dL-zHJ" secondAttribute="bottom" constant="60" id="xzK-C3-jYb"/>
+                            <constraint firstItem="5bZ-JG-Lcd" firstAttribute="top" secondItem="ozH-dL-zHJ" secondAttribute="bottom" constant="30" id="vix-Qx-30c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="clientURLField" destination="t8n-cC-LmZ" id="Vsq-1S-zFR"/>
-                        <outlet property="clinicianIDField" destination="ozH-dL-zHJ" id="Y55-NM-g10"/>
-                        <outlet property="launchBtn" destination="Z2K-P3-D5m" id="g3f-5M-vnq"/>
+                        <outlet property="clinicianIDField" destination="uzV-Ov-IQU" id="xQG-JA-F6x"/>
+                        <outlet property="clinicianNameField" destination="ozH-dL-zHJ" id="R5Z-Wo-JpU"/>
+                        <outlet property="clinicianPracticeNameField" destination="5bZ-JG-Lcd" id="wV0-Te-vVv"/>
+                        <outlet property="coldLaunchBtn" destination="58j-5K-xSB" id="Fho-9S-mPU"/>
+                        <outlet property="launchWithClinicianBtn" destination="Z2K-P3-D5m" id="34X-WU-kdZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

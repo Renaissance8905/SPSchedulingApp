@@ -13,9 +13,11 @@ import Foundation
 public struct Clinician: SchedulingData {
     var id: ClinicianID
     var url: ClientURL
-    var name: String
+    var name: String?
+    var practiceName: String?
     
     var textRepresentation: [String] {
+        guard let name = name, !name.isEmpty else { return [] }
         return [name]
     }
 }

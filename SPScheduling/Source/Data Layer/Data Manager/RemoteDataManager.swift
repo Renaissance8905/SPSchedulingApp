@@ -54,12 +54,12 @@ class RemoteDataManager: DataManager {
     }
     
     private func fetchServices(for clinician: Clinician, _ completion: @escaping ResultCompletion<ServiceResponse>) {
-        apiClient.sendRequest(.services(clinician), completion: completion)
+        apiClient.sendRequest(Request.services(clinician), completion: completion)
         
     }
     
     private func fetchLocations(for clinician: Clinician, service: Service, _ completion: @escaping ResultCompletion<LocationResponse>) {
-        apiClient.sendRequest(.locations(clinician, service), completion: completion)
+        apiClient.sendRequest(Request.locations(clinician, service), completion: completion)
         
     }
     
