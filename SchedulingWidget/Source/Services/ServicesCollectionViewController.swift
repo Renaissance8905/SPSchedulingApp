@@ -1,6 +1,6 @@
 //
 //  ServicesCollectionViewController.swift
-//  SPScheduling
+//  SchedulingWidget
 //
 //  Created by Christopher Spradling on 4/13/19.
 //  Copyright © 2019 cspantech. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  APIClientProtocol.swift
-//  SPScheduling
+//  SchedulingWidget
 //
 //  Created by Christopher Spradling on 4/14/19.
 //  Copyright © 2019 cspantech. All rights reserved.

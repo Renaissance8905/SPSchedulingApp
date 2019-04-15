@@ -118,7 +118,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CD10019B226021CD009FD15D /* SPScheduling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPScheduling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD10019B226021CD009FD15D /* SchedulingWidgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchedulingWidgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD10019E226021CE009FD15D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD1001A3226021CE009FD15D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD1001A5226021CF009FD15D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -226,7 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE55C5F22647DD000010446 /* SchedulingWidget */,
-				CD10019D226021CD009FD15D /* SPScheduling */,
+				CD10019D226021CD009FD15D /* SchedulingWidgetApp */,
 				CD1001B2226021CF009FD15D /* SPSchedulingTests */,
 				CDE55C6C22647DD000010446 /* SchedulingWidgetTests */,
 				CD10019C226021CD009FD15D /* Products */,
@@ -236,7 +236,7 @@
 		CD10019C226021CD009FD15D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD10019B226021CD009FD15D /* SPScheduling.app */,
+				CD10019B226021CD009FD15D /* SchedulingWidgetApp.app */,
 				CD1001AF226021CF009FD15D /* SPSchedulingTests.xctest */,
 				CDE55C5E22647DD000010446 /* SchedulingWidget.framework */,
 				CDE55C6622647DD000010446 /* SchedulingWidgetTests.xctest */,
@@ -244,14 +244,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CD10019D226021CD009FD15D /* SPScheduling */ = {
+		CD10019D226021CD009FD15D /* SchedulingWidgetApp */ = {
 			isa = PBXGroup;
 			children = (
 				CDE55C7D22647E2700010446 /* Resources */,
 				CDE55C7C22647E1A00010446 /* Source */,
 				CDEEB498226050AF00E01CAE /* Info.plist */,
 			);
-			path = SPScheduling;
+			path = SchedulingWidgetApp;
 			sourceTree = "<group>";
 		};
 		CD1001B2226021CF009FD15D /* SPSchedulingTests */ = {
@@ -510,9 +510,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CD10019A226021CD009FD15D /* SPScheduling */ = {
+		CD10019A226021CD009FD15D /* SchedulingWidgetApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD1001B8226021CF009FD15D /* Build configuration list for PBXNativeTarget "SPScheduling" */;
+			buildConfigurationList = CD1001B8226021CF009FD15D /* Build configuration list for PBXNativeTarget "SchedulingWidgetApp" */;
 			buildPhases = (
 				CD100197226021CD009FD15D /* Sources */,
 				CD100198226021CD009FD15D /* Frameworks */,
@@ -524,9 +524,9 @@
 			dependencies = (
 				CDE55C7222647DD000010446 /* PBXTargetDependency */,
 			);
-			name = SPScheduling;
+			name = SchedulingWidgetApp;
 			productName = SPScheduling;
-			productReference = CD10019B226021CD009FD15D /* SPScheduling.app */;
+			productReference = CD10019B226021CD009FD15D /* SchedulingWidgetApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CD1001AE226021CF009FD15D /* SPSchedulingTests */ = {
@@ -610,7 +610,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD100196226021CD009FD15D /* Build configuration list for PBXProject "SPScheduling" */;
+			buildConfigurationList = CD100196226021CD009FD15D /* Build configuration list for PBXProject "SchedulingWidgetProject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -623,10 +623,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD10019A226021CD009FD15D /* SPScheduling */,
-				CD1001AE226021CF009FD15D /* SPSchedulingTests */,
 				CDE55C5D22647DD000010446 /* SchedulingWidget */,
 				CDE55C6522647DD000010446 /* SchedulingWidgetTests */,
+				CD10019A226021CD009FD15D /* SchedulingWidgetApp */,
+				CD1001AE226021CF009FD15D /* SPSchedulingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -755,7 +755,7 @@
 /* Begin PBXTargetDependency section */
 		CD1001B1226021CF009FD15D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD10019A226021CD009FD15D /* SPScheduling */;
+			target = CD10019A226021CD009FD15D /* SchedulingWidgetApp */;
 			targetProxy = CD1001B0226021CF009FD15D /* PBXContainerItemProxy */;
 		};
 		CDE55C6922647DD000010446 /* PBXTargetDependency */ = {
@@ -765,7 +765,7 @@
 		};
 		CDE55C6B22647DD000010446 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD10019A226021CD009FD15D /* SPScheduling */;
+			target = CD10019A226021CD009FD15D /* SchedulingWidgetApp */;
 			targetProxy = CDE55C6A22647DD000010446 /* PBXContainerItemProxy */;
 		};
 		CDE55C7222647DD000010446 /* PBXTargetDependency */ = {
@@ -918,7 +918,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SPScheduling/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SchedulingWidgetApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -938,7 +938,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SPScheduling/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SchedulingWidgetApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1092,7 +1092,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD100196226021CD009FD15D /* Build configuration list for PBXProject "SPScheduling" */ = {
+		CD100196226021CD009FD15D /* Build configuration list for PBXProject "SchedulingWidgetProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD1001B6226021CF009FD15D /* Debug */,
@@ -1101,7 +1101,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD1001B8226021CF009FD15D /* Build configuration list for PBXNativeTarget "SPScheduling" */ = {
+		CD1001B8226021CF009FD15D /* Build configuration list for PBXNativeTarget "SchedulingWidgetApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD1001B9226021CF009FD15D /* Debug */,
