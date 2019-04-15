@@ -12,10 +12,7 @@
 		CD1001A6226021CF009FD15D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A5226021CF009FD15D /* Assets.xcassets */; };
 		CD1001A9226021CF009FD15D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */; };
 		CD1001B4226021CF009FD15D /* SPSchedulingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001B3226021CF009FD15D /* SPSchedulingTests.swift */; };
-		CD1001C22260234B009FD15D /* stubGetServices.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1001C12260234B009FD15D /* stubGetServices.json */; };
-		CD1001C422602386009FD15D /* stubGetLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1001C322602386009FD15D /* stubGetLocations.json */; };
 		CDE55C6722647DD000010446 /* SchedulingWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE55C5E22647DD000010446 /* SchedulingWidget.framework */; };
-		CDE55C6E22647DD000010446 /* SchedulingWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE55C6D22647DD000010446 /* SchedulingWidgetTests.swift */; };
 		CDE55C7022647DD000010446 /* SchedulingWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE55C6022647DD000010446 /* SchedulingWidget.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDE55C7322647DD000010446 /* SchedulingWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE55C5E22647DD000010446 /* SchedulingWidget.framework */; };
 		CDE55C7422647DD000010446 /* SchedulingWidget.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDE55C5E22647DD000010446 /* SchedulingWidget.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -69,6 +66,8 @@
 		CDE55CB222647EAB00010446 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2CB2261B21800B46AB4 /* APIRequestProtocol.swift */; };
 		CDE55CB322647EAB00010446 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C72261AC0500B46AB4 /* APIClient.swift */; };
 		CDE55CB422647EAB00010446 /* APIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C92261AC0F00B46AB4 /* APIProtocols.swift */; };
+		CDE55CB82264837800010446 /* stubGetServices.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1001C12260234B009FD15D /* stubGetServices.json */; };
+		CDE55CB92264837800010446 /* stubGetLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1001C322602386009FD15D /* stubGetLocations.json */; };
 		CDEEB49322604D7100E01CAE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49222604D7100E01CAE /* LaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -168,8 +167,6 @@
 		CDE55C6022647DD000010446 /* SchedulingWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchedulingWidget.h; sourceTree = "<group>"; };
 		CDE55C6122647DD000010446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE55C6622647DD000010446 /* SchedulingWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchedulingWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDE55C6D22647DD000010446 /* SchedulingWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingWidgetTests.swift; sourceTree = "<group>"; };
-		CDE55C6F22647DD000010446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDEEB49222604D7100E01CAE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingWidget.swift; sourceTree = "<group>"; };
 		CDEEB498226050AF00E01CAE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -228,7 +225,6 @@
 				CDE55C5F22647DD000010446 /* SchedulingWidget */,
 				CD10019D226021CD009FD15D /* SchedulingWidgetApp */,
 				CD1001B2226021CF009FD15D /* SPSchedulingTests */,
-				CDE55C6C22647DD000010446 /* SchedulingWidgetTests */,
 				CD10019C226021CD009FD15D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -257,7 +253,8 @@
 		CD1001B2226021CF009FD15D /* SPSchedulingTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD1001B3226021CF009FD15D /* SPSchedulingTests.swift */,
+				CDE55CB62264832C00010446 /* Resources */,
+				CDE55CB52264831F00010446 /* Source */,
 				CD1001B5226021CF009FD15D /* Info.plist */,
 			);
 			path = SPSchedulingTests;
@@ -267,7 +264,6 @@
 			isa = PBXGroup;
 			children = (
 				CD1001A5226021CF009FD15D /* Assets.xcassets */,
-				CD1001C02260232D009FD15D /* Stubs */,
 				CD1001BF22602323009FD15D /* Views */,
 			);
 			path = Resources;
@@ -458,15 +454,6 @@
 			path = SchedulingWidget;
 			sourceTree = "<group>";
 		};
-		CDE55C6C22647DD000010446 /* SchedulingWidgetTests */ = {
-			isa = PBXGroup;
-			children = (
-				CDE55C6D22647DD000010446 /* SchedulingWidgetTests.swift */,
-				CDE55C6F22647DD000010446 /* Info.plist */,
-			);
-			path = SchedulingWidgetTests;
-			sourceTree = "<group>";
-		};
 		CDE55C7C22647E1A00010446 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -481,6 +468,22 @@
 			children = (
 				CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */,
 				CD1001A2226021CE009FD15D /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CDE55CB52264831F00010446 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CD1001B3226021CF009FD15D /* SPSchedulingTests.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CDE55CB62264832C00010446 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD1001C02260232D009FD15D /* Stubs */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -636,10 +639,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD1001C422602386009FD15D /* stubGetLocations.json in Resources */,
 				CD1001A9226021CF009FD15D /* LaunchScreen.storyboard in Resources */,
 				CD1001A6226021CF009FD15D /* Assets.xcassets in Resources */,
-				CD1001C22260234B009FD15D /* stubGetServices.json in Resources */,
 				CD1001A4226021CE009FD15D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,6 +649,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE55CB82264837800010446 /* stubGetServices.json in Resources */,
+				CDE55CB92264837800010446 /* stubGetLocations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,7 +749,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDE55C6E22647DD000010446 /* SchedulingWidgetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
