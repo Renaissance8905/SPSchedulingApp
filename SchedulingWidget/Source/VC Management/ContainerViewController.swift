@@ -10,6 +10,8 @@ import UIKit
 
 protocol Container: class {
     func setTitle(_: String?)
+    
+    func showMenuBtn(_ show: Bool)
     func requestConfirmation(_ confirmation: @escaping (Bool) -> Void)
     func dismissWidget()
 }
@@ -21,6 +23,7 @@ class ContainerViewController: UIViewController, SchedulingViewController {
     
     @IBOutlet private var containerView: UIView?
     @IBOutlet private var closeBtn: UIButton?
+    @IBOutlet private var menuBtn: UIButton?
     @IBOutlet fileprivate var practiceNameLbl: UILabel?
     
     override func viewDidLoad() {
@@ -48,6 +51,19 @@ class ContainerViewController: UIViewController, SchedulingViewController {
     private func configureButton() {
         closeBtn?.formatAsSelectButton("Cancel")
         closeBtn?.addTarget(self, action: #selector(dismissWidget), for: .touchUpInside)
+        
+        menuBtn?.setImage(SchedulingImage.menu.image, for: .normal)
+        menuBtn?.tintColor = .lightGray
+        menuBtn?.setTitle(nil, for: .normal)
+        menuBtn?.addTarget(self, action: #selector(showMenu), for: .touchUpInside)
+        menuBtn?.isHidden = true
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: nil) { _ in
+            self.menuBtn?.isHidden = !self.isCompactWidth
+        }
     }
     
 }
@@ -67,6 +83,21 @@ extension ContainerViewController: Container {
     
     @objc func dismissWidget() {
         dismiss(animated: true)
+        
+    }
+
+    @objc func showMenu() {
+        (children.first as? StepUpdateListener)?.showMenu()
+        showMenuBtn(false)
+    }
+    
+    func showMenuBtn(_ show: Bool) {
+        guard isCompactWidth else { return }
+        
+        menuBtn?.isEnabled = show
+        UIView.animate(withDuration: 0.5) {
+            self.menuBtn?.isHidden = !show
+        }
         
     }
     

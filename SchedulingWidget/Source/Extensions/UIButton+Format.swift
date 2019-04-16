@@ -10,7 +10,7 @@ import UIKit
 
 extension UIButton {
     
-    func formatAsSelectButton(_ title: String = "Select") {
+    func formatAsSelectButton(_ title: String? = "Select") {
         
         setTitle(title, for: .normal)
         setTitleColor(.white, for: .normal)

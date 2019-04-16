@@ -31,7 +31,7 @@ extension SchedulingCollectionViewController where Self: UIViewController {
     }
     
     func configureCollectionView() {
-        let collectionView = UICollectionView(frame: view.frame, collectionViewLayout: UICollectionViewFlowLayout())
+        let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
         view.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = true
         collectionView.delegate = self
@@ -40,6 +40,15 @@ extension SchedulingCollectionViewController where Self: UIViewController {
         self.collectionView = collectionView
         
         registerCell()
+        
+    }
+    
+    func sizeCollectionView() {
+        
+        // Set size async'ly to account for late-arriving SplitView elements
+        DispatchQueue.main.async {
+            self.collectionView?.frame = self.view.bounds
+        }
         
     }
     

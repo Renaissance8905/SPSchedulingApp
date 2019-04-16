@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SchedulingStepController: UIViewController {
+class SchedulingStepController: UIViewController, SchedulingViewController {
     
     weak var widget: SchedulingWidget?
     
@@ -26,6 +26,17 @@ class SchedulingStepController: UIViewController {
         tableView?.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 200
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        update()
+        widget?.hideMenuButton()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        widget?.showMenuButton()
     }
     
     func update() {
@@ -57,7 +68,12 @@ extension SchedulingStepController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         widget?.rollBackActiveStep(to: indexPath)
         listener?.didUpdateStep()
-        listener?.updateDetail()
+        if isCompactWidth, let vc = widget?.viewController(for: indexPath) {
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            listener?.updateDetail()
+
+        }
         
     }
 }

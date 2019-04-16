@@ -9,37 +9,6 @@
 import Foundation
 import UIKit
 
-public struct Appointment {
-    var clinician: Clinician
-    var service: Service
-    var location: Location
-    var apptTime: AppointmentTime
-    var clientInfo: ClientInfo
-    
-    public var clientName: String {
-        return clientInfo.name
-    }
-    
-    public var successMessage: String {
-        var fullname = ""
-        if let practice = clinician.practiceName {
-            fullname = "with \n\n\(practice)"
-        }
-        if let name = clinician.name {
-            if !fullname.isEmpty {
-                fullname.append("'s ")
-            } else {
-                fullname.append("with \n\n")
-            }
-            fullname.append(name)
-            
-        }
-        
-        return "Your appointment \(fullname) \n\nfor \(service.attributes.description) \n\nat \(location.attributes.name) \n\non \(apptTime.dateString), \(apptTime.timeString) \n\nis confirmed."
-
-    }
-}
-
 public class SchedulingWidget: SchedulingWidgetProtocol {
     
     public static func launchWithClinician(_ clinician: Clinician?, apiClient: APIClient, presenter: UIViewController, result: AppointmentReturn) {
@@ -113,8 +82,27 @@ public class SchedulingWidget: SchedulingWidgetProtocol {
         
     }
     
+    func viewController(for indexPath: IndexPath) -> UIViewController? {
+        guard let vm = stepViewModel(for: indexPath), vm.state != .pending else { return nil }
+        return vm.step.viewController(self)
+    }
+    
     func set(_ data: SchedulingData) {
         progress.set(data)
+    }
+    
+}
+
+extension SchedulingWidget { // Container Delegate
+    
+    func showMenuButton() {
+        widgetView?.showMenuBtn(true)
+        
+    }
+    
+    func hideMenuButton() {
+        widgetView?.showMenuBtn(false)
+        
     }
     
 }

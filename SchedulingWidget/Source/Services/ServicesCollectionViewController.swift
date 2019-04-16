@@ -37,6 +37,19 @@ class ServicesCollectionViewController: UIViewController, SchedulingCollectionVi
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        sizeCollectionView()
+        
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: { (transitioner) in
+            self.collectionView?.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        })
+    }
+    
     func updateData() {
         
         widget?.fetchServices() { [weak self] data in

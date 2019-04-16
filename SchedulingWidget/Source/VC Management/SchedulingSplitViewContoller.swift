@@ -12,6 +12,7 @@ import UIKit
 protocol StepUpdateListener {
     func didUpdateStep()
     func updateDetail()
+    func showMenu()
 }
 
 class SchedulingSplitViewController: UISplitViewController, SchedulingViewController, StepUpdateListener {
@@ -27,6 +28,7 @@ class SchedulingSplitViewController: UISplitViewController, SchedulingViewContro
         stepController?.widget = widget
         setContainerTitle()
         showDetailViewController()
+        delegate = widget
         splitViewController?.preferredDisplayMode = .allVisible
     }
     
@@ -46,7 +48,32 @@ class SchedulingSplitViewController: UISplitViewController, SchedulingViewContro
     func showDetailViewController() {
         guard let detail = widget?.viewControllerForActiveStep else { return }
         showDetailViewController(detail, sender: self)
+    }
+    
+    override func showDetailViewController(_ vc: UIViewController, sender: Any?) {
+        if isCompactWidth {
+            showMenu()
+        } else {
+            super.showDetailViewController(vc, sender: sender)
+        }
         
+    }
+    
+    func showMenu() {
+        (viewControllers.first as? UINavigationController)?.popToRootViewController(animated: true)
+    }
+    
+    override func show(_ vc: UIViewController, sender: Any?) {
+        let nav = stepController?.navigationController ?? (viewControllers.first as? UINavigationController)
+        let actualVC = (vc as? UINavigationController)?.topViewController ?? vc
+        nav?.pushViewController(actualVC, animated: true)
+    }
+    
+    private func setStepControllerIfNeeded() {
+        guard self.stepController?.view.window == nil else { return }
+        guard let widget = widget else { return }
+        let stepController = self.stepController ?? SchedulingStepController.viewController(with: widget)
+        (viewControllers.first as? UINavigationController)?.setViewControllers([stepController], animated: true)
     }
     
 }

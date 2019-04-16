@@ -29,12 +29,21 @@ class LocationsCollectionViewController: UIViewController, SchedulingCollectionV
             self?.widget?.set(location)
             self?.updateAndNotify()
         }
+        configureCollectionView()
+
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        configureCollectionView()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        sizeCollectionView()
         
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: { (transitioner) in
+            self.collectionView?.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        })
     }
     
     func updateData() {        
@@ -50,7 +59,6 @@ class LocationsCollectionViewController: UIViewController, SchedulingCollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("\(data.count) locations")
         return data.count
     }
     
@@ -60,11 +68,15 @@ class LocationsCollectionViewController: UIViewController, SchedulingCollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 20, left: 100, bottom: 20, right: 0)
+        return UIEdgeInsets(top: 40, left: 40, bottom: 300, right: 40)
         
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 30
     }
 

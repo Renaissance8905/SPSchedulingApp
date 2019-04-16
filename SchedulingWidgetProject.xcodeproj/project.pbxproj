@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CD10019F226021CE009FD15D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10019E226021CE009FD15D /* AppDelegate.swift */; };
 		CD1001A4226021CE009FD15D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A2226021CE009FD15D /* Main.storyboard */; };
-		CD1001A6226021CF009FD15D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A5226021CF009FD15D /* Assets.xcassets */; };
 		CD1001A9226021CF009FD15D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A7226021CF009FD15D /* LaunchScreen.storyboard */; };
 		CD1001B4226021CF009FD15D /* SPSchedulingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1001B3226021CF009FD15D /* SPSchedulingTests.swift */; };
 		CDE55C6722647DD000010446 /* SchedulingWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE55C5E22647DD000010446 /* SchedulingWidget.framework */; };
@@ -68,6 +67,10 @@
 		CDE55CB422647EAB00010446 /* APIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99C2C92261AC0F00B46AB4 /* APIProtocols.swift */; };
 		CDE55CB82264837800010446 /* stubGetServices.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1001C12260234B009FD15D /* stubGetServices.json */; };
 		CDE55CB92264837800010446 /* stubGetLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1001C322602386009FD15D /* stubGetLocations.json */; };
+		CDE55CBB2265A58F00010446 /* UIImage+Sheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE55CBA2265A58F00010446 /* UIImage+Sheduling.swift */; };
+		CDE55CBC2265A86200010446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1001A5226021CF009FD15D /* Assets.xcassets */; };
+		CDE55CBE2265B0F000010446 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE55CBD2265B0F000010446 /* Appointment.swift */; };
+		CDE55CC22265B12F00010446 /* UIViewController+Scheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE55CC12265B12F00010446 /* UIViewController+Scheduling.swift */; };
 		CDEEB49322604D7100E01CAE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEEB49222604D7100E01CAE /* LaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -167,6 +170,9 @@
 		CDE55C6022647DD000010446 /* SchedulingWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchedulingWidget.h; sourceTree = "<group>"; };
 		CDE55C6122647DD000010446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE55C6622647DD000010446 /* SchedulingWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchedulingWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE55CBA2265A58F00010446 /* UIImage+Sheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Sheduling.swift"; sourceTree = "<group>"; };
+		CDE55CBD2265B0F000010446 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		CDE55CC12265B12F00010446 /* UIViewController+Scheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Scheduling.swift"; sourceTree = "<group>"; };
 		CDEEB49222604D7100E01CAE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingWidget.swift; sourceTree = "<group>"; };
 		CDEEB498226050AF00E01CAE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -292,9 +298,8 @@
 		CD1001C5226024AD009FD15D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */,
-				CD99C2D22261D68D00B46AB4 /* SchedulingSplitViewContoller.swift */,
-				CD99C31322645D8400B46AB4 /* ContainerViewController.swift */,
+				CDE55CBF2265B11200010446 /* Widget */,
+				CDE55CC02265B11A00010446 /* VC Management */,
 				CD99C30A2263EB7100B46AB4 /* Protocols */,
 				CDEEB4BB2260823F00E01CAE /* Scheduling Step */,
 				CD99C2F82262D2BB00B46AB4 /* Clinician */,
@@ -304,7 +309,6 @@
 				CD99C2FA2262D2D100B46AB4 /* Your Info */,
 				CD99C2EF2262D09900B46AB4 /* Extensions */,
 				CD99C2BE2261ABC700B46AB4 /* Data Layer */,
-				CD99C3152264726400B46AB4 /* SchedulingProgressModel.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -358,6 +362,8 @@
 				CD99C2F22262D21800B46AB4 /* UICollectionViewCell+Shadow.swift */,
 				CD99C2F42262D22700B46AB4 /* UIButton+Format.swift */,
 				CD99C31122645D5B00B46AB4 /* UIAlertController+Alerts.swift */,
+				CDE55CBA2265A58F00010446 /* UIImage+Sheduling.swift */,
+				CDE55CC12265B12F00010446 /* UIViewController+Scheduling.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -486,6 +492,25 @@
 				CD1001C02260232D009FD15D /* Stubs */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CDE55CBF2265B11200010446 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				CDEEB49422604E0D00E01CAE /* SchedulingWidget.swift */,
+				CD99C3152264726400B46AB4 /* SchedulingProgressModel.swift */,
+				CDE55CBD2265B0F000010446 /* Appointment.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		CDE55CC02265B11A00010446 /* VC Management */ = {
+			isa = PBXGroup;
+			children = (
+				CD99C2D22261D68D00B46AB4 /* SchedulingSplitViewContoller.swift */,
+				CD99C31322645D8400B46AB4 /* ContainerViewController.swift */,
+			);
+			path = "VC Management";
 			sourceTree = "<group>";
 		};
 		CDEEB4BB2260823F00E01CAE /* Scheduling Step */ = {
@@ -640,7 +665,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1001A9226021CF009FD15D /* LaunchScreen.storyboard in Resources */,
-				CD1001A6226021CF009FD15D /* Assets.xcassets in Resources */,
 				CD1001A4226021CE009FD15D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,6 +689,7 @@
 				CDE55CA422647E9A00010446 /* ServiceCell.xib in Resources */,
 				CDE55CA322647E9A00010446 /* SchedulingStepCell.xib in Resources */,
 				CDE55CA222647E7800010446 /* SchedulingSplitViewController.storyboard in Resources */,
+				CDE55CBC2265A86200010446 /* Assets.xcassets in Resources */,
 				CDE55CA122647E7800010446 /* ContainerViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -711,11 +736,13 @@
 				CDE55C8F22647E7800010446 /* ServiceCell.swift in Sources */,
 				CDE55C8522647E7800010446 /* SchedulingViewControllerProtocol.swift in Sources */,
 				CDE55C7F22647E7800010446 /* SchedulingSplitViewContoller.swift in Sources */,
+				CDE55CC22265B12F00010446 /* UIViewController+Scheduling.swift in Sources */,
 				CDE55C8322647E7800010446 /* SchedulingWidgetProtocol.swift in Sources */,
 				CDE55C8622647E7800010446 /* SchedulingDetailProtocol.swift in Sources */,
 				CDE55C8A22647E7800010446 /* SchedulingStepCell.swift in Sources */,
 				CDE55C9722647E7800010446 /* YourInfoViewController.swift in Sources */,
 				CDE55C9422647E7800010446 /* AppointmentTime.swift in Sources */,
+				CDE55CBB2265A58F00010446 /* UIImage+Sheduling.swift in Sources */,
 				CDE55CB222647EAB00010446 /* APIRequestProtocol.swift in Sources */,
 				CDE55C9B22647E7800010446 /* UIButton+Format.swift in Sources */,
 				CDE55CAB22647EA500010446 /* DataManagerProtocol.swift in Sources */,
@@ -734,6 +761,7 @@
 				CDE55CAE22647EA500010446 /* StubDataManager.swift in Sources */,
 				CDE55C8822647E7800010446 /* SchedulingStep.swift in Sources */,
 				CDE55C8422647E7800010446 /* APIClientProtocol.swift in Sources */,
+				CDE55CBE2265B0F000010446 /* Appointment.swift in Sources */,
 				CDE55C9522647E7800010446 /* DateTimeViewController.swift in Sources */,
 				CDE55C8C22647E7800010446 /* Clinician.swift in Sources */,
 				CDE55CB422647EAB00010446 /* APIProtocols.swift in Sources */,
@@ -929,7 +957,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -949,7 +977,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
