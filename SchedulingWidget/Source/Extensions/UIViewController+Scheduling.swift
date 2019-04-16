@@ -10,6 +10,7 @@ import UIKit
 
 extension UIViewController {
     var isCompactWidth: Bool {
-        return traitCollection.horizontalSizeClass != .regular
+        // ignoring iPad Portrait, because while that slides out the menu controller it does not collapse it
+        return UIDevice.current.userInterfaceIdiom == .phone
     }
 }

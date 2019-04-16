@@ -33,8 +33,8 @@ public class SchedulingWidget: SchedulingWidgetProtocol {
         
     }
     
-    func rollBackActiveStep(to indexPath: IndexPath) {
-        progress.rollBackActiveStep(to: indexPath)
+    func rollBackActiveStep(to indexPath: IndexPath) -> Bool {
+        return progress.rollBackActiveStep(to: indexPath)
         
     }
     
@@ -84,6 +84,7 @@ public class SchedulingWidget: SchedulingWidgetProtocol {
     
     func viewController(for indexPath: IndexPath) -> UIViewController? {
         guard let vm = stepViewModel(for: indexPath), vm.state != .pending else { return nil }
+        if vm.step == .clinician && progress.clinicianLocked { return nil }
         return vm.step.viewController(self)
     }
     

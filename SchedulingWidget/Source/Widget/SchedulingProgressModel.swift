@@ -91,16 +91,17 @@ class SchedulingProgressModel {
         }
     }
     
-    func rollBackActiveStep(to indexPath: IndexPath) {
+    func rollBackActiveStep(to indexPath: IndexPath) -> Bool {
         // We only want to be able to decrement the active step by indexPath,
         // incrementing will be triggered when a selection is made
-        guard let active = SchedulingStep(for: indexPath), active.index < activeStep.index else { return }
+        guard let active = SchedulingStep(for: indexPath), active.index < activeStep.index else { return false }
         
         // If clinicianLocked == true, we cannot change the clinician
         // or access the Clinician selection screen
-        guard !(active == .clinician && clinicianLocked) else { return }
+        guard !(active == .clinician && clinicianLocked) else { return false }
         
         activeStep = active
+        return true
         
     }
     

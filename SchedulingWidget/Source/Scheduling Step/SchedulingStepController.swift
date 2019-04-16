@@ -66,11 +66,11 @@ extension SchedulingStepController: UITableViewDataSource {
 extension SchedulingStepController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        widget?.rollBackActiveStep(to: indexPath)
+        let changed = widget?.rollBackActiveStep(to: indexPath) ?? false
         listener?.didUpdateStep()
         if isCompactWidth, let vc = widget?.viewController(for: indexPath) {
             navigationController?.pushViewController(vc, animated: true)
-        } else {
+        } else if changed {
             listener?.updateDetail()
 
         }

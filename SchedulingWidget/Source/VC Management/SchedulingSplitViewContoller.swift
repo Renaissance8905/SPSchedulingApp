@@ -28,7 +28,7 @@ class SchedulingSplitViewController: UISplitViewController, SchedulingViewContro
         stepController?.widget = widget
         setContainerTitle()
         showDetailViewController()
-        delegate = widget
+        delegate = self
         splitViewController?.preferredDisplayMode = .allVisible
     }
     
@@ -76,4 +76,12 @@ class SchedulingSplitViewController: UISplitViewController, SchedulingViewContro
         (viewControllers.first as? UINavigationController)?.setViewControllers([stepController], animated: true)
     }
     
+}
+
+extension SchedulingSplitViewController: UISplitViewControllerDelegate {
+    
+    public func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        (primaryViewController as? UINavigationController)?.popToRootViewController(animated: true)
+        return true
+    }
 }
