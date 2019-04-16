@@ -6,25 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="CIe-jH-Yvs">
-            <objects>
-                <viewController id="ewm-S0-pwq" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ffl-hd-7Wl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="kBk-UM-IIk"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BIU-LH-8Uy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-66" y="54"/>
-        </scene>
         <!--Root View Controller-->
         <scene sceneID="9dD-uZ-Ch0">
             <objects>
@@ -45,7 +29,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ra4-AY-ahC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886" y="-610"/>
+            <point key="canvasLocation" x="636" y="-610"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lox-zP-n3p">
@@ -69,12 +53,11 @@
                 <splitViewController id="5EL-le-Bb3" customClass="SchedulingSplitViewController" customModule="SchedulingWidget" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="6dl-9Q-pz0" kind="relationship" relationship="masterViewController" id="V64-xJ-Ozt"/>
-                        <segue destination="ewm-S0-pwq" kind="relationship" relationship="detailViewController" id="g7e-xy-mAj"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nl4-hT-KwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1018" y="-278"/>
+            <point key="canvasLocation" x="-794" y="-610"/>
         </scene>
     </scenes>
 </document>
